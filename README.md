@@ -2,7 +2,7 @@
 
 > Son bienvenidos los _issues_ y _PRs_ para mejorar el contenido, corregir errores, etc
 
-# [WIP] Notas sobre PostgreSQL
+# [WIP] Notas sobre DBs relacionales
 
 ## Contenido
 
