@@ -53,4 +53,4 @@ Ver [PostgreSQL (Postgres) - Installation & Overview](https://www.youtube.com/wa
 
 ## Ejercicios
 
-1. Instalar [PostgreSQL](https://www.postgresql.org/) (Ver [PostgreSQL (Postgres) - Installation & Overview](https://www.youtube.com/watch?v=fZQI7nBu32M))
+1. Instalar [PostgreSQL](https://www.postgresql.org/) (Ver [PostgreSQL - Instalación](https://github.com/undefinedschool/notes-dbs#instalaci%C3%B3n))
