@@ -29,7 +29,7 @@ Una base de datos nos da una **estructura** y nos permite setear un conjunto de 
 
 ### Base de datos relacional
 
-Una base de datos **_relacional_** es una colección de **_tablas_**, relacionadas entre sí. Organizamos los datos en tablas.
+Una base de datos **_relacional_** es una colección de **_tablas_** (de 2 dimensiones), relacionadas entre sí. Organizamos los datos en tablas.
 
 Cada tabla contiene **_filas_** y **_columnas_**, que a su vez contienen **datos**. 
 
@@ -49,7 +49,7 @@ El _server_ de la base de datos se encarga de correr el _DBMS_ (Database Managem
 
 ### Primary Key
 
-Es un valor que identifica **unívocamente** un registro (fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
+Es un valor que identifica **unívocamente** cada registro (fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
 
 ### Index
 
@@ -60,6 +60,8 @@ Para solucionar este problema existen los **índices**, que permiten que nuestra
 ## SQL
 
 **SQL** (**S**tructured **Q**uery **L**anguage), es un lenguaje que utilizamos para interactuar con una base de datos relacional y realizar operaciones de tipo _CRUD_ (**C**reate, **R**ead, **U**pdate, **D**elete), como crear bases de datos, crear tablas, insertar datos en estas tablas, seleccionar datos específicos que cumplan con ciertos criterios, combinar datos, eliminar datos, etc.
+
+**SQL nos permite responder preguntas específicas sobre los datos almacenados en la DB**.
 
 **Nota:** las instrucciones deben siempre terminar con `;`. Es indiferente si las escribimos en una sola línea o en varias, utilizando indentación para que resulte más legible.
 
@@ -101,7 +103,7 @@ CREATE TABLE movies (
 );
 ```
 
-### ALTER
+### `ALTER`
 
 Es un _comando_ que nos permite modificar una tabla.
 
@@ -123,7 +125,7 @@ DROP COLUMN
   remove_this;
 ```
 
-### DROP
+### `DROP`
 
 Es un _comando_ que nos permite eliminar tablas o la base de datos entera.
 
@@ -156,19 +158,19 @@ VALUES
 
 Es el _comando_ que utilizamos para **seleccionar valores de una tabla**.
 
-Si queremos traer todas las columnas de una tabla, hacemos
+Si queremos traer todas las columnas de una tabla, usamos el `*`
 
 ```sql
 SELECT * FROM movies;
 ```
 
-Si queremos ver sólo los títulos, tenemos que especificar el nombre del campo
+Si queremos ver sólo los títulos, tenemos que especificar la columna
 
 ```sql
 SELECT title FROM movies;
 ```
 
-Podemos traer varias columnas
+También podemos traer varias columnas
 
 ```sql
 SELECT title, rate FROM movies;
