@@ -25,10 +25,6 @@ Tenemos datos que necesitamos almacenar, que pueden ser de diferentes tipos (com
 
 Una base de datos nos da una **estructura** y nos permite setear un conjunto de **reglas** sobre los datos que guardamos.
 
-## SQL
-
-**SQL** (**S**tructured **Q**uery **L**anguage), es un lenguaje que utilizamos para interactuar con una base de datos relacional y realizar operaciones de tipo _CRUD_ (**C**reate, **R**ead, **U**pdate, **D**elete), como crear bases de datos, crear tablas, insertar datos en estas tablas, seleccionar datos específicos que cumplan con ciertos criterios, combinar datos, eliminar datos, etc.
-
 ## Base de datos relacional
 
 Una base de datos **_relacional_** es una colección de **_tablas_**, relacionadas entre sí. Cada table contiene **_filas_** y **_columnas_**, que a su vez contienen **datos**. Vamos a llamar **_registro_** (_record_) a cada una de las filas.
@@ -43,7 +39,7 @@ La colección de tablas de una base de datos se conoce como **_schema_**.
 
 La mayoría de las bases de datos siguen la arquitectura _cliente-servidor_.
 
-El _server_ de la base de datos se encarga de correr el _DBMS_ (Database Management System). A través de un _cliente_, nos conectamos al _server_ de la DB, para crear nuestra base de datos.
+El _server_ de la base de datos se encarga de correr el _DBMS_ (Database Management System). A través de un _cliente_, nos conectamos al _server_ de la DB, para crear nuestra base de datos e interactuar con ella.
 
 ### PostgreSQL
 
@@ -51,6 +47,199 @@ El _server_ de la base de datos se encarga de correr el _DBMS_ (Database Managem
 
 Ver [PostgreSQL (Postgres) - Installation & Overview](https://www.youtube.com/watch?v=fZQI7nBu32M)
 
+
+## SQL
+
+**SQL** (**S**tructured **Q**uery **L**anguage), es un lenguaje que utilizamos para interactuar con una base de datos relacional y realizar operaciones de tipo _CRUD_ (**C**reate, **R**ead, **U**pdate, **D**elete), como crear bases de datos, crear tablas, insertar datos en estas tablas, seleccionar datos específicos que cumplan con ciertos criterios, combinar datos, eliminar datos, etc.
+
+**Nota:** las instrucciones deben siempre terminar con `;`. Es indiferente si las escribimos en una sola línea o en varias, utilizando indentación para que resulte más legible.
+
+Vamos a llamar _consulta_ o **_query_** a cada instrucción que termina con `;`. 
+
+Una _query_ está compuesta por _comandos_ y _cláusulas_. 
+
+- **Comandos:** son los que utilizamos para crear y definir nuevas bases de datos, campos e índices. También para seleccionar, insertar, eliminar y actualizar datos, generar consultas para ordenar, filtrar y extraer datos de la base de datos.
+- **Cláusulas:** son condiciones de modificación utilizadas para definir los datos que desea seleccionar o manipular.
+
+## Comandos para modificar el _schema_
+
+### `CREATE DATABASE`
+
+Es el _comando_ que utilizamos para crear una nueva base de datos.
+
+```sql
+CREATE DATABASE testingdb;
+```
+
+También podríamos escribir la instrucción en 2 líneas, porque lo importante es el `;`.
+
+```sql
+CREATE DATABASE 
+  testingdb;
+```
+
+### `CREATE TABLE`
+
+Es el _comando_ que utilizamos para crear una nueva tabla.
+
+```sql
+CREATE TABLE movies (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(100),
+  overview VARCHAR,
+  release_date DATE,
+  remove_this CHAR(1)
+);
+```
+
+### ALTER
+
+Es un _comando_ que nos permite modificar una tabla.
+
+Para **agregar una nueva columna**, usamos `ALTER` con `ADD`
+
+```sql
+ALTER TABLE
+  movies
+ADD
+  rate DECIMAL(4, 2);
+```
+
+Para **eliminar una columna**, usamos `ALTER` con `DROP COLUMN`
+
+```sql
+ALTER TABLE
+  movies
+DROP COLUMN
+  remove_this;
+```
+
+### DROP
+
+Es un _comando_ que nos permite eliminar tablas o la base de datos entera.
+
+Para **eliminar una tabla**, usamos `DROP TABLE`
+
+```sql
+DROP TABLE movies;
+```
+
+Para **eliminar una db**, usamos `DROP DATABASE`
+
+```sql
+DROP DATABASE testingdb;
+```
+
+## Comandos para trabajar y manipular datos
+
+### `INSERT`
+
+Es el _comando_ que utilizamos para insertar valores en una tabla. 
+
+```sql
+INSERT INTO 
+  movies (title, overview, release_date, rate)
+VALUES 
+  ('Gattaca', 'In a future society in the era of indefinite eugenics, humans are set on a life course depending on their DNA. Young Vincent Freeman is born with a condition that would prevent him from space travel, yet is determined to infiltrate the GATTACA space program.', '1997-10-24', 7.50);
+```
+
+### `SELECT`
+
+Es el _comando_ que utilizamos para **seleccionar valores de una tabla**.
+
+Si queremos traer todas las columnas de una tabla, hacemos
+
+```sql
+SELECT * FROM movies;
+```
+
+Si queremos ver sólo los títulos, tenemos que especificar el nombre del campo
+
+```sql
+SELECT title FROM movies;
+```
+
+Podemos traer varias columnas
+
+```sql
+SELECT title, rate FROM movies;
+```
+
+### `ORDER BY`
+
+Es la _cláusula_ que utilizamos para ordenar valores por cierto campo.
+
+Especificamos por qué campo ordenar. **Por default, ordena de forma ascendente**.
+
+```sql
+SELECT title, rate FROM movies ORDER BY rate;
+```
+
+Podemos especificar el orden agregando `ASC|DESC`
+
+```sql
+SELECT 
+  title, rate 
+FROM 
+  movies 
+ORDER BY 
+  rate DESC;
+```
+
+### `WHERE`
+
+Es la _cláusula_ que utilizamos para setear las condiciones que deben cumplir los campos que queremos seleccionar
+
+```sql
+SELECT 
+  title, rate 
+FROM 
+  movies
+WHERE
+  rate > 7;
+```
+
+### `UPDATE`
+
+Es el _comando_ que utilizamos para actualizar el valor de un campo. Se usa junto con `SET`, para especificar los valores nuevos y `WHERE`, para especificar qué campo queremos modificar.
+
+```sql
+UPDATE
+  movies
+SET
+  rate = 8.00
+WHERE
+  title = 'Gattaca';
+```
+
+### `DELETE`
+
+Es el _comando_ que utilizamos para eliminar registros de una tabla.
+
+```sql
+DELETE FROM
+  movies
+WHERE
+  title = 'Gattaca';
+```
+
+:warning: **No te olvides de poner el `WHERE` en el `DELETE FROM`!**
+
+[![](https://img.youtube.com/vi/i_cVJgIz_Cs/0.jpg)](https://www.youtube.com/watch?v=i_cVJgIz_Cs)
+
+### Primary Key
+
+Es un valor que identifica **unívocamente** un registro (fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
+
+### Index
+
+Cuando buscamos datos en una tabla (`SELECT, WHERE`), la base de datos tiene que mirar registro por registro para encontrar aquellos que matcheen con los criterios especificados. Si tenemos un gran volumen de datos, esta operación puede ser muy lenta.
+
+Para solucionar este problema existen los **índices**, que permiten que nuestras _queries_ sean rápidas y eficientes.
+
 ## Ejercicios
 
 1. Instalar [PostgreSQL](https://www.postgresql.org/) (Ver [PostgreSQL - Instalación](https://github.com/undefinedschool/notes-dbs#instalaci%C3%B3n))
+2. Práctica con [SQLBolt](https://sqlbolt.com/)
+3. Práctica en [Codewars - SQL for Beginners](https://www.codewars.com/collections/sql-for-beginners)
+4. Práctica en [PostgreSQL Exercises](https://pgexercises.com/gettingstarted.html)
