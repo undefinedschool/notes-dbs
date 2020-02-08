@@ -29,7 +29,11 @@ Una base de datos nos da una **estructura** y nos permite setear un conjunto de 
 
 ### Base de datos relacional
 
-Una base de datos **_relacional_** es una colección de **_tablas_**, relacionadas entre sí. Cada table contiene **_filas_** y **_columnas_**, que a su vez contienen **datos**. Vamos a llamar **_registro_** (_record_) a cada una de las filas.
+Una base de datos **_relacional_** es una colección de **_tablas_**, relacionadas entre sí. Organizamos los datos en tablas.
+
+Cada tabla contiene **_filas_** y **_columnas_**, que a su vez contienen **datos**. 
+
+Vamos a llamar **_registro_** (_record_) a cada una de las filas.
 
 ![](https://miro.medium.com/max/736/0*kBYg1f1lVSFE5cY6.PNG)
 
