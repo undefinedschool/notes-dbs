@@ -61,9 +61,11 @@ Para solucionar este problema existen los **índices**, que permiten que nuestra
 
 **SQL** (**S**tructured **Q**uery **L**anguage), es un lenguaje que utilizamos para interactuar con una base de datos relacional y realizar operaciones de tipo _CRUD_ (**C**reate, **R**ead, **U**pdate, **D**elete), como crear bases de datos, crear tablas, insertar datos en estas tablas, seleccionar datos específicos que cumplan con ciertos criterios, combinar datos, eliminar datos, etc, es decir, _consultar, manipular y transformar datos de una base de datos relacional_.
 
-👉 **SQL nos permite responder preguntas específicas sobre los datos almacenados en la DB**.
+👉 **SQL nos permite entonces, responder preguntas específicas sobre los datos almacenados en la DB**.
 
-**Nota:** las instrucciones deben siempre terminar con `;`. Es indiferente si las escribimos en una sola línea o en varias, utilizando indentación para que resulte más legible.
+> A las _bases de datos relacionales_ también se las conoce coloquialmente como _bases de datos SQL_. Existen muchas,     SQLite, MySQL, Postgres, Oracle, Microsoft SQL Server, etc. Todas estas tienen soporte para el **standard SQL** (que es lo que  vamos   a utilizar) y además, cada implementación o _engine_ agrega sus propias features y tipos de datos (no standard).
+
+⚠️ **Nota:** las instrucciones deben siempre terminar con `;`. Es indiferente si las escribimos en una sola línea o en varias, utilizando indentación para que resulte más legible.
 
 Vamos a llamar _consulta_ o **_query_** a cada instrucción que termina con `;`. 
 
