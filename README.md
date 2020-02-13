@@ -31,6 +31,8 @@ Una base de datos nos da una **estructura** y nos permite setear un conjunto de 
 
 Una base de datos **_relacional_** es una **colección** de **_tablas_** (de 2 dimensiones), relacionadas entre sí. 
 
+Para una guía visual, ver [A Shelfish Starter Guide to Databases](https://illustrated.dev/databases)
+
 **Organizamos los datos en tablas**.
 
 Cada tabla contiene **_filas_** y **_columnas_**, que a su vez contienen **datos**. 
@@ -42,6 +44,8 @@ Vamos a llamar **_registro_** (_record_) a cada una de las filas.
 Los datos de las diferentes tablas pueden estar, como dijimos antes, _relacionados entre sí_ (de ahí el nombre de bases de datos _relacionales_).
 
 La colección de tablas de una base de datos se conoce como **_schema_**.
+
+👉 En una _base de datos relacional_, **el _schema_ debe definirse antes de poder interactuar con la misma**.
 
 ### Server
 
