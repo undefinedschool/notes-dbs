@@ -25,6 +25,11 @@ Tenemos datos que necesitamos almacenar, que pueden ser de diferentes tipos (com
 
 Una base de datos nos da una **estructura** y nos permite setear un conjunto de **reglas** sobre los datos que guardamos.
 
+## Características
+
+- _schema_ estricto
+- datos organizados en tablas, relacionadas entre sí
+
 ## Conceptos
 
 ### Base de datos relacional
@@ -45,7 +50,7 @@ Los datos de las diferentes tablas pueden estar, como dijimos antes, _relacionad
 
 La colección de tablas de una base de datos se conoce como **_schema_**.
 
-👉 En una _base de datos relacional_, **el _schema_ debe definirse antes de poder interactuar con la misma**.
+👉 En una _base de datos relacional_, **el _schema_ debe definirse antes de poder interactuar con la misma**. Todos los _registros_ de una base de datos relacional deben seguir el esquema definido.
 
 ### Server
 
@@ -56,6 +61,12 @@ El _server_ de la base de datos se encarga de correr el _DBMS_ (Database Managem
 ### Primary Key
 
 Es un valor que identifica **unívocamente** cada registro (fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
+
+### Relaciones
+
+- 1 to 1
+- 1 to many
+- many to many
 
 ### Index
 
