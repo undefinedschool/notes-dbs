@@ -82,7 +82,7 @@ Es el lenguaje que vamos a utilizar para hacer consultas e interactuar con una _
 
 ## PostgreSQL
 
-[PostgreSQL](https://www.postgresql.org), también conocido como _Postgres_ a secas, es una base de datos relacional de propósito general, open-source y gratuita (tanto para uso personal como comercial). Se trata también de una de las bases de datos relacionales más avanzadas y populares que existen.
+[PostgreSQL](https://www.postgresql.org), también conocido como _Postgres_ a secas, es un [_RDBMS_](https://www.codecademy.com/articles/what-is-rdbms-sql) para bases de datos relacionales, de propósito general, open-source y gratuito, tanto para uso personal como comercial. Se trata también de una de las bases de datos relacionales más avanzadas y populares que existen.
 
 Provee soporte para la mayor parte del _standard SQL_ y agrega algunas features propias (incluso [podemos utilizar JavaScript para crear funciones _custom_](https://blog.heroku.com/javascript_in_your_postgres)).
 
