@@ -24,6 +24,8 @@ Tenemos datos que necesitamos almacenar, que pueden ser de diferentes tipos (com
 - **redundancia**: la duplicación de datos genera conflictos, cómo sabemos cuál es el correcto?
 - **importancia**: no queremos perder datos ni el trabajo realizado frente a imprevistos
 
+[![What are databases?](https://img.youtube.com/vi/Ls_LzOZ7x0c/0.jpg)](https://www.youtube.com/watch?v=Ls_LzOZ7x0c)
+
 Una base de datos nos da una **estructura** y nos permite setear un conjunto de **reglas** sobre los datos que guardamos.
 
 ## Características
