@@ -29,6 +29,8 @@ Tenemos datos que necesitamos almacenar, que pueden ser de diferentes tipos (com
 
 Una base de datos nos da una **estructura** y nos permite setear un conjunto de **reglas** sobre los datos que guardamos.
 
+A través de una base de datos, podemos **almacenar, manipular y obtener** datos.
+
 ## Características
 
 - _schema_ estricto
