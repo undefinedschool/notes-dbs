@@ -27,9 +27,8 @@ Tenemos datos que necesitamos almacenar, que pueden ser de diferentes tipos (com
 [![What are databases?](https://img.youtube.com/vi/Ls_LzOZ7x0c/0.jpg)](https://www.youtube.com/watch?v=Ls_LzOZ7x0c)
 > Ver [What are databases? | Simon Allardice](https://www.youtube.com/watch?v=Ls_LzOZ7x0c)
 
-Una base de datos nos da una **estructura** y nos permite setear un conjunto de **reglas** sobre los datos que guardamos.
-
-A través de una base de datos, podemos **almacenar, manipular y obtener** datos.
+> 👉 Una base de datos nos da una **estructura** y nos permite setear un conjunto de **reglas** sobre los datos que guardamos.
+> A través de una base de datos, podemos **almacenar, manipular y obtener** datos.
 
 ## Características
 
@@ -60,9 +59,11 @@ La colección de tablas de una base de datos se conoce como **_schema_**.
 
 ### Server
 
-La mayoría de las bases de datos siguen la arquitectura _cliente-servidor_.
+La mayoría de las **bases de datos** siguen la **arquitectura _cliente-servidor_**.
 
-El _server_ de la base de datos se encarga de correr el _DBMS_ (Database Management System). A través de un _cliente_, nos conectamos al _server_ de la DB, para crear nuestra base de datos e interactuar con ella.
+Es en el _server_ donde se encuentran alojados los datos.
+
+El **_server_ de la base de datos** además, **se encarga de correr el _DBMS_ (Database Management System)**. A través de un _cliente_, nos conectamos al _server_ de la DB, para crear nuestra base de datos e interactuar con ella.
 
 ### Primary Key
 
