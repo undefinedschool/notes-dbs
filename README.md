@@ -69,6 +69,8 @@ El **_server_ de la base de datos** además, **se encarga de correr el _DBMS_ (D
 
 Es un valor que identifica **unívocamente** cada registro (fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
 
+### Foreign Key
+
 ### Relaciones
 
 - 1 to 1
