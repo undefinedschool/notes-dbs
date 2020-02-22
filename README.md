@@ -67,9 +67,13 @@ El **_server_ de la base de datos** además, **se encarga de correr el _DBMS_ (D
 
 ### Primary Key
 
-Es un valor que identifica **unívocamente** cada registro (fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
+Es un valor o campo (o grupo de campos) que identifica **unívocamente** cada registro (fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
 
 ### Foreign Key
+
+Es un valor o campo (o grupo de campos) que identifica **unívocamente** un registro (fila) de otra tabla, es decir, hace referencia a una [**Primary Key**](https://github.com/undefinedschool/notes-dbs#primary-key) de otra tabla.
+
+> Una tabla puede contener múltiples Foreign Keys, dependiendo de sus relaciones con otras tablas.
 
 ### Relaciones
 
