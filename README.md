@@ -18,6 +18,8 @@
   - [DBMS](https://github.com/undefinedschool/notes-dbs#dbms)
   - [Server](https://github.com/undefinedschool/notes-dbs#server)
   - [Primary Key](https://github.com/undefinedschool/notes-dbs#primary-key)
+    - [Natural keys](https://github.com/undefinedschool/notes-dbs#natural-keys)
+    - [Synthetic keys](https://github.com/undefinedschool/notes-dbs#synthetic-keys)
   - [Foreign Key](https://github.com/undefinedschool/notes-dbs#foreign-key)
   - [Relaciones](https://github.com/undefinedschool/notes-dbs#relaciones)
   - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
@@ -104,13 +106,25 @@ El **_server_ de la base de datos** además, **se encarga de correr el _DBMS_ (D
 
 ### Primary Key
 
-Es un valor o campo (o grupo de campos) que identifica **unívocamente** cada registro (fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
+Es un valor o campo (o grupo de campos) que identifica **unívocamente** (1 y sólo 1) cada registro (o fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
 
 > 👉 **Toda tabla de una base de datos relacional debe tener definida una Primary Key**.
+
+#### Natural keys
+
+Se conocen como _natural keys_ (claves naturales) a las _Primary Keys_ que se generan a partir de los datos de una tabla (que no se repiten), como por ejemplo el email.
+
+#### Synthetic keys
+
+Se conocen como _synthetic keys_ o _surrogate keys_ (claves sustitutas) a las _Primary Keys_ generadas por la base de datos, como pueden ser `product_id`, `customer_id`, etc., que no deriva de los datos de la tabla, es decir, es una columna extra que agregamos sólo con este propósito.
+
+> Para más detalles, ver [Natural Key vs Surrogate Key](https://www.databasejournal.com/features/mssql/article.php/3922066/SQL-Server-Natural-Key-Verses-Surrogate-Key.htm)
 
 ### Foreign Key
 
 Es un valor o campo (o grupo de campos) que identifica **unívocamente** un registro (fila) de otra tabla, es decir, hace referencia a una [**Primary Key**](https://github.com/undefinedschool/notes-dbs#primary-key) de otra tabla.
+
+El tipo de dato es indistinto, lo importante es que la columna que elijamos como _Primary Key_ no contenga valores repetidos.
 
 > 👉 **Una tabla puede contener múltiples Foreign Keys**, dependiendo de sus relaciones con otras tablas.
 
