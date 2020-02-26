@@ -7,26 +7,26 @@
 
 ## Contenido
 
-- [Qué problema resuelven las bases de datos]()
-- [Conceptos]()
-  - [Base de datos relacional]()
-    - [Características]()
-  - [DBMS]()
-  - [Server]()
-  - [Primary Key]()
-  - [Foreign Key]()
-  - [Relaciones]()
-  - [Índices]()
-- [SQL]()
-- [PostgreSQL]()
-  - [Instalación]()
-- [Ejercicios]()
+- [Qué problema resuelven las bases de datos](https://github.com/undefinedschool/notes-dbs#qu%C3%A9-problema-resuelven-las-bases-de-datos)
+- [Conceptos](https://github.com/undefinedschool/notes-dbs#conceptos)
+  - [Base de datos relacional](https://github.com/undefinedschool/notes-dbs#base-de-datos-relacional)
+    - [Características](https://github.com/undefinedschool/notes-dbs#caracter%C3%ADsticas)
+  - [DBMS](https://github.com/undefinedschool/notes-dbs#dbms)
+  - [Server](https://github.com/undefinedschool/notes-dbs#server)
+  - [Primary Key](https://github.com/undefinedschool/notes-dbs#primary-key)
+  - [Foreign Key](https://github.com/undefinedschool/notes-dbs#foreign-key)
+  - [Relaciones](https://github.com/undefinedschool/notes-dbs#relaciones)
+  - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
+- [SQL](https://github.com/undefinedschool/notes-dbs#sql)
+- [PostgreSQL](https://github.com/undefinedschool/notes-dbs#postgresql)
+  - [Instalación](https://github.com/undefinedschool/notes-dbs#instalaci%C3%B3n)
+- [Ejercicios](https://github.com/undefinedschool/notes-dbs#ejercicios)
 
 ---
 
 ## Qué problema resuelven las bases de datos
 
-Tenemos datos que necesitamos almacenar, que pueden ser de diferentes tipos (como datos de clientes, información sobre un producto, nombres, fechas de nacimiento, cantidades, etc). Pero **el problema no pasa por tener datos en si**, este no es un motivo suficiente para necesitar usar una base de datos. Los problemas son los siguientes
+**Tenemos datos que necesitamos almacenar**, que pueden ser de diferentes tipos (como datos de clientes, información sobre un producto, nombres, fechas de nacimiento, cantidades, etc). **Pero el problema no pasa por tener datos en si**, este no es un motivo suficiente para necesitar usar una base de datos. Los problemas que enfrentamos son los siguientes:
 
 - **tamaño**: la cantidad de datos que tenemos que manejar puede ir creciendo con el tiempo
 - facilidad de **actualización de los datos**: qué pasaría si, por ejemplo, 2 personas quieren editar datos a la vez?
@@ -47,7 +47,7 @@ Tenemos datos que necesitamos almacenar, que pueden ser de diferentes tipos (com
 
 Una base de datos **_relacional_** es una **colección** de **_tablas_** (de 2 dimensiones), relacionadas entre sí. 
 
-Para una guía visual, ver [A Shelfish Starter Guide to Databases](https://illustrated.dev/databases)
+> 👉 Para una guía visual, ver [A Shelfish Starter Guide to Databases](https://illustrated.dev/databases).
 
 **Organizamos los datos en tablas**.
 
@@ -70,11 +70,11 @@ La colección de tablas de una base de datos se conoce como **_schema_**.
 
 ### DBMS
 
-Oracle, MySQL, PostgreSQL, MongoDB, etc. _no son bases de datos, sino **Database Management Systems** (DBMS)_. Un _DBMS_ es un software que utilizamos para crear y administrar bases de datos.
+Oracle, MySQL, PostgreSQL, MongoDB, etc. _no son bases de datos en si, sino **Database Management Systems** (DBMS)_. Un _DBMS_ es un software que utilizamos para crear y administrar bases de datos.
 
-**Un _DBMS_ puede administrar 1 o varias bases de datos**.
+> 👉 **Un _DBMS_ puede administrar 1 o varias bases de datos**.
 
-En el caso de las bases de datos relacionales, utilizamos **Relational Database Management Systems** o _RDBMS_ y los principios y conceptos aplican para las diferentes variantes.
+En el caso de las bases de datos relacionales, utilizamos **Relational Database Management Systems** o _RDBMS_ y los principios y conceptos aplican para las diferentes variantes mencionadas anteriormente.
 
 ### Server
 
@@ -112,7 +112,7 @@ Para solucionar este problema existen los **índices**, que permiten que nuestra
 
 Es el lenguaje que vamos a utilizar para hacer consultas e interactuar con una _base de datos relacional_.
 
-👉 Ver [notas de SQL](https://github.com/undefinedschool/notes-sql/)
+👉 Ver [notas de SQL](https://github.com/undefinedschool/notes-sql/).
 
 ## PostgreSQL
 
@@ -124,7 +124,7 @@ Al tratarse de una _base de datos relacional_, vamos a urilizar SQL para realiza
 
 ### Instalación
 
-Lo más fácil es ir a la [sección de descargas de PostgreSQL](https://www.postgresql.org/download/) y descargar el [instalador interactivo](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) correspondiente a nuestro SO.
+Lo más fácil es ir a la [sección de descargas de PostgreSQL](https://www.postgresql.org/download/) y descargar el [instalador interactivo](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) correspondiente a nuestro Sistema Operativo.
 
 En el caso de OS X, podemos usar [`homebrew`](https://brew.sh/) para instalarlo:
 
@@ -146,11 +146,11 @@ brew postgresql-upgrade-database
 brew services restart postgresql
 ```
 
-👉 Para más detalles, ver [PostgreSQL (Postgres) - Installation & Overview](https://www.youtube.com/watch?v=fZQI7nBu32M)
+👉 Para más detalles, ver [PostgreSQL (Postgres) - Installation & Overview](https://www.youtube.com/watch?v=fZQI7nBu32M).
 
 ## Ejercicios
 
-1. Instalar [PostgreSQL](https://www.postgresql.org/) (Ver [PostgreSQL - Instalación](https://github.com/undefinedschool/notes-dbs#instalaci%C3%B3n))
-2. Práctica con [SQLBolt](https://sqlbolt.com/)
-3. Práctica en [Codewars - SQL for Beginners](https://www.codewars.com/collections/sql-for-beginners)
-4. Práctica en [PostgreSQL Exercises](https://pgexercises.com/gettingstarted.html)
+1. Instalar [PostgreSQL](https://www.postgresql.org/) (Ver [PostgreSQL - Instalación](https://github.com/undefinedschool/notes-dbs#instalaci%C3%B3n)).
+2. Práctica con [SQLBolt](https://sqlbolt.com/).
+3. Práctica en [Codewars - SQL for Beginners](https://www.codewars.com/collections/sql-for-beginners).
+4. Práctica en [PostgreSQL Exercises](https://pgexercises.com/gettingstarted.html).
