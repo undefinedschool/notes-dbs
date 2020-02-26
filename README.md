@@ -106,7 +106,7 @@ El **_server_ de la base de datos** además, **se encarga de correr el _DBMS_ (D
 
 ### Primary Key
 
-Es un valor o campo (o grupo de campos) que identifica **unívocamente** (1 y sólo 1) cada registro (o fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
+Es un valor de una columna (o conjunto de columnas) que identifica **unívocamente** (1 y sólo 1) cada registro (o fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
 
 > 👉 **Toda tabla de una base de datos relacional debe tener definida una Primary Key**.
 
