@@ -7,13 +7,24 @@
 
 ## Contenido
 
-- []()
+- [Qué problema resuelven las bases de datos]()
+- [Conceptos]()
+  - [Base de datos relacional]()
+    - [Características]()
+  - [DBMS]()
+  - [Server]()
+  - [Primary Key]()
+  - [Foreign Key]()
+  - [Relaciones]()
+  - [Índices]()
+- [SQL]()
+- [PostgreSQL]()
+  - [Instalación]()
+- [Ejercicios]()
 
 ---
 
-## Bases de Datos
-
-### Qué problema resuelven
+## Qué problema resuelven las bases de datos
 
 Tenemos datos que necesitamos almacenar, que pueden ser de diferentes tipos (como datos de clientes, información sobre un producto, nombres, fechas de nacimiento, cantidades, etc). Pero **el problema no pasa por tener datos en si**, este no es un motivo suficiente para necesitar usar una base de datos. Los problemas son los siguientes
 
@@ -29,11 +40,6 @@ Tenemos datos que necesitamos almacenar, que pueden ser de diferentes tipos (com
 
 > 👉 Una base de datos nos da una **estructura** y nos permite setear un conjunto de **reglas** sobre los datos que guardamos.
 > A través de una base de datos, podemos **almacenar, manipular y obtener** datos.
-
-## Características
-
-- _schema_ estricto
-- datos organizados en tablas, relacionadas entre sí
 
 ## Conceptos
 
@@ -56,6 +62,11 @@ Los datos de las diferentes tablas pueden estar, como dijimos antes, _relacionad
 La colección de tablas de una base de datos se conoce como **_schema_**.
 
 👉 En una _base de datos relacional_, **el _schema_ debe definirse antes de poder interactuar con la misma**. Todos los _registros_ de una base de datos relacional deben seguir el esquema definido.
+
+#### Características
+
+- _schema_ estricto
+- datos organizados en tablas, relacionadas entre sí
 
 ### DBMS
 
@@ -91,7 +102,7 @@ Es un valor o campo (o grupo de campos) que identifica **unívocamente** un regi
 - 1 to many
 - many to many
 
-### Index
+### Índices
 
 Cuando buscamos datos en una tabla (`SELECT, WHERE`), la base de datos tiene que mirar registro por registro para encontrar aquellos que matcheen con los criterios especificados. Si tenemos un gran volumen de datos, esta operación puede ser muy lenta.
 
