@@ -112,11 +112,15 @@ Es un valor de una columna (o conjunto de columnas) que identifica **unívocamen
 
 #### Natural keys
 
-Se conocen como _natural keys_ (claves naturales) a las _Primary Keys_ que se generan a partir de los datos de una tabla (que no se repiten), como por ejemplo el email.
+Se conocen como _natural keys_ (claves naturales) a las _Primary Keys_ que **se generan a partir de los datos de una tabla**.
+
+Son valores de columnas que tienen relación col el resto de las columnas de un registro dado. Por ejemplo, email, número de seguridad social, número de pasaporte, ISBN, etc.
 
 #### Synthetic keys
 
-Se conocen como _synthetic keys_ o _surrogate keys_ (claves sustitutas) a las _Primary Keys_ generadas por la base de datos, como pueden ser `product_id`, `customer_id`, etc., que no deriva de los datos de la tabla, es decir, es una columna extra que agregamos sólo con este propósito.
+Se conocen como _synthetic keys_ o _surrogate keys_ (claves sustitutas) a las _Primary Keys_ **generadas por la base de datos al insertar un nuevo registro**: estas no derivan de los datos de la tabla, es decir, es una columna extra que agregamos sólo con este propósito.
+
+Se trata generalmente de valores numéricos, como pueden ser `product_id` o `customer_id`, etc. 
 
 > Para más detalles, ver [Natural Key vs Surrogate Key](https://www.databasejournal.com/features/mssql/article.php/3922066/SQL-Server-Natural-Key-Verses-Surrogate-Key.htm)
 
