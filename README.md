@@ -10,7 +10,11 @@
 - [Qué problema resuelven las bases de datos](https://github.com/undefinedschool/notes-dbs#qu%C3%A9-problema-resuelven-las-bases-de-datos)
 - [Conceptos](https://github.com/undefinedschool/notes-dbs#conceptos)
   - [Base de datos relacional](https://github.com/undefinedschool/notes-dbs#base-de-datos-relacional)
-    - [Características](https://github.com/undefinedschool/notes-dbs#caracter%C3%ADsticas)
+    - [Tabla]()
+      - [Registro]()
+    - [Schema]()
+    - [Tipos de datos]()
+    - [Características]()
   - [DBMS](https://github.com/undefinedschool/notes-dbs#dbms)
   - [Server](https://github.com/undefinedschool/notes-dbs#server)
   - [Primary Key](https://github.com/undefinedschool/notes-dbs#primary-key)
@@ -45,28 +49,36 @@
 
 ### Base de datos relacional
 
-Una base de datos **_relacional_** es una **colección** de **_tablas_** (de 2 dimensiones), relacionadas entre sí. 
+Una base de datos **_relacional_** es una **colección** de 1 o más [**_tablas_**]() (de 2 dimensiones), relacionadas entre sí. 
+
+#### Tabla
+
+**Organizamos los datos en tablas**. Las tablas forman los _bloques fundamentales_ de los que se compone una DB.
 
 > 👉 Para una guía visual, ver [A Shelfish Starter Guide to Databases](https://illustrated.dev/databases).
 
-**Organizamos los datos en tablas**.
-
-Cada tabla contiene **_filas_** y **_columnas_**, que a su vez contienen **datos**. 
-
-Vamos a llamar **_registro_** (_record_) a cada una de las filas.
+Cada tabla contiene **_filas_** y **_columnas_**, que a su vez contienen **datos**. En las tablas definimos la estructura, los [_tipos de datos_]() que van a almacenar
 
 ![](https://miro.medium.com/max/736/0*kBYg1f1lVSFE5cY6.PNG)
 
 Los datos de las diferentes tablas pueden estar, como dijimos antes, _relacionados entre sí_ (de ahí el nombre de bases de datos _relacionales_).
 
+##### Registro
+
+Vamos a llamar **_registro_** (_record_) a cada una de las filas de una [tabla](), que representan una unidad de información.
+
+#### Schema
+
 La colección de tablas de una base de datos se conoce como **_schema_**.
 
 👉 En una _base de datos relacional_, **el _schema_ debe definirse antes de poder interactuar con la misma**. Todos los _registros_ de una base de datos relacional deben seguir el esquema definido.
 
+#### Tipos de datos
+
 #### Características
 
-- _schema_ estricto
 - datos organizados en tablas, relacionadas entre sí
+- _schema_ estricto, definido al comienzo
 
 ### DBMS
 
