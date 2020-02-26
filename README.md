@@ -57,6 +57,14 @@ La colección de tablas de una base de datos se conoce como **_schema_**.
 
 👉 En una _base de datos relacional_, **el _schema_ debe definirse antes de poder interactuar con la misma**. Todos los _registros_ de una base de datos relacional deben seguir el esquema definido.
 
+### DBMS
+
+Oracle, MySQL, PostgreSQL, MongoDB, etc. _no son bases de datos, sino **Database Management Systems** (DBMS)_. Un _DBMS_ es un software que utilizamos para crear y administrar bases de datos.
+
+**Un _DBMS_ puede administrar 1 o varias bases de datos**.
+
+En el caso de las bases de datos relacionales, utilizamos **Relational Database Management Systems** o _RDBMS_ y los principios y conceptos aplican para las diferentes variantes.
+
 ### Server
 
 La mayoría de las **bases de datos** siguen la **arquitectura _cliente-servidor_**.
