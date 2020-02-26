@@ -57,11 +57,17 @@ Una base de datos **_relacional_** es una **colección** de 1 o más [**_tablas_
 
 > 👉 Para una guía visual, ver [A Shelfish Starter Guide to Databases](https://illustrated.dev/databases).
 
-Cada tabla contiene **_filas_** y **_columnas_**, que a su vez contienen **datos**. En las tablas definimos la estructura, los [_tipos de datos_]() que van a almacenar
+Cada tabla contiene **_filas_** y **_columnas_**, que a su vez contienen **datos**. En las tablas definimos la estructura y los [_tipos de datos_]() que estas van a almacenar, al definir las columnas de las mismas.
+
+**Cada columna le da un nombre y un [tipo]() (texto, numérico, fecha, etc.) al dato almacenado** y cada fila ([_registro_](https://github.com/undefinedschool/notes-dbs#registro)) debe seguir esta estructura.
 
 ![](https://miro.medium.com/max/736/0*kBYg1f1lVSFE5cY6.PNG)
 
+> 👉 **Al definir las columnas de una tabla, estamos estableciendo reglas sobre los datos que contiene una tabla**, que el [DBMS](https://github.com/undefinedschool/notes-dbs#dbms) se encargará de hacer cumplir.
+
 Los datos de las diferentes tablas pueden estar, como dijimos antes, _relacionados entre sí_ (de ahí el nombre de bases de datos _relacionales_).
+
+> 👉 **Las tablas y sus columnas deben definirse de antemano, antes de poder cargar datos en la DB.**
 
 ##### Registro
 
