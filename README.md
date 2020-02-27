@@ -38,7 +38,7 @@
 
 ## Base de Datos
 
-Una base de datos es un **conjunto de datos relacionados entre si y almacenados sistemáticamente (agrupados o estructurados de cierta forma) para su posterior uso**.
+Una base de datos es un **conjunto de datos relacionados entre si y almacenados sistemáticamente (agrupados o estructurados de cierta forma) para facilitar su posterior uso**.
 
 Nos permiten guardar grandes cantidades de información de forma organizada, para que luego podamos encontrarla y utilizarla más fácilmente.
 
