@@ -7,6 +7,7 @@
 
 ## Contenido
 
+- [Base de Datos](https://github.com/undefinedschool/notes-dbs#base-de-datos)
 - [Qué problema resuelven las bases de datos](https://github.com/undefinedschool/notes-dbs#qu%C3%A9-problema-resuelven-las-bases-de-datos)
 - [Conceptos](https://github.com/undefinedschool/notes-dbs#conceptos)
   - [Base de datos relacional](https://github.com/undefinedschool/notes-dbs#base-de-datos-relacional)
@@ -29,6 +30,14 @@
 - [Ejercicios](https://github.com/undefinedschool/notes-dbs#ejercicios)
 
 ---
+
+## Base de Datos
+
+Una base de datos es un **conjunto de datos relacionados entre si y almacenados sistemáticamente (agrupados o estructurados de cierta forma) para su posterior uso**.
+
+Nos permiten guardar grandes cantidades de información de forma organizada, para que luego podamos encontrarla y utilizarla más fácilmente.
+
+> Para más detalles, ver [Base de datos - Wikipedia](https://es.wikipedia.org/wiki/Base_de_datos)
 
 ## Qué problema resuelven las bases de datos
 
@@ -90,11 +99,11 @@ La colección de tablas de una base de datos se conoce como **_schema_**.
 
 ### DBMS
 
-Oracle, MySQL, PostgreSQL, MongoDB, etc. _no son bases de datos en si, sino **Database Management Systems** (DBMS)_. Un _DBMS_ es un software que utilizamos para crear y administrar bases de datos.
+Oracle, MySQL, PostgreSQL, MongoDB, etc. _no son bases de datos en si, sino **Database Management Systems** (DBMS)_. Un _DBMS_ es un software que utilizamos para crear y administrar bases de datos, permitiéndonos acceder a los datos de forma rápida y estructurada.
 
 > 👉 **Un _DBMS_ puede administrar 1 o varias bases de datos**.
 
-En el caso de las bases de datos relacionales, utilizamos **Relational Database Management Systems** o _RDBMS_ y los principios y conceptos aplican para las diferentes variantes mencionadas anteriormente.
+En el caso de las bases de datos relacionales, utilizamos más específicamente, **Relational Database Management Systems** o _RDBMS_. Los principios y conceptos que usaremos aplican para las diferentes variantes mencionadas anteriormente.
 
 ### Server
 
