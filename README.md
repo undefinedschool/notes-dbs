@@ -142,11 +142,11 @@ El tipo de dato es indistinto, lo importante es que la columna que elijamos como
 
 Cuando buscamos datos en una tabla (`SELECT, WHERE`), la base de datos tiene que mirar registro por registro para encontrar aquellos que coincidan con los criterios especificados. Si tenemos un gran volumen de datos, esta operación puede ser _muy lenta_.
 
-Para solucionar este problema existen los **índices**, que permiten que nuestras _queries_ sean rápidas y eficientes.
+Para solucionar este problema existen los **índices**, que permiten que nuestras _queries_ sean rápidas y eficientes, mejorando en consecuencia la _performance_.
 
 Podemos _indexar_ tablas por 1 o más columnas. **Una DB puede tener más de un índice**.
 
-> ⚠️ **Agregar índices a una DB requiere más espacio de almacenamiento (espacio en disco)**. Además, cada vez que agreguemos un nuevo registro a una tabla, se actualizarán los índices correspondientes, haciendo esta operación más costosa. Por lo tanto, hay que utilizarlos con la precaución y planificación necesaria.
+> ⚠️ **Agregar índices a una DB requiere espacio extra de almacenamiento (espacio en disco), aparte del espacio necesario para almacenar los datos**. Además, cada vez que agreguemos un nuevo registro a una tabla, se actualizarán los índices correspondientes, haciendo esta operación más costosa. Por lo tanto, hay que utilizarlos con la precaución y planificación necesaria.
 
 ## SQL
 
