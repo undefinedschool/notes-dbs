@@ -3,7 +3,7 @@
 
 > 👉 Si te resultó útil, **se agradece que lo compartas para que le llegue a más gente!**
 
-# [WIP] Notas sobre DBs relacionales
+![Notas sobre Bases de Datos Relacionales](https://i.imgur.com/g9S0eWn.png)
 
 ## Contenido
 
