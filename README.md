@@ -26,7 +26,8 @@
   - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
   - [Transacciones](https://github.com/undefinedschool/notes-dbs#transacciones)
   - [ACID](https://github.com/undefinedschool/notes-dbs#acid)
-- [Bases de Datos Relacionales (SQL) vs No Relacionales (NoSQL)]()
+  - [Normalización]()
+- [Bases de Datos Relacionales (SQL) vs No Relacionales (NoSQL)](https://github.com/undefinedschool/notes-dbs#bases-de-datos-relacionales-sql-vs-no-relacionales-nosql)
 - [SQL](https://github.com/undefinedschool/notes-dbs#sql)
 - [PostgreSQL](https://github.com/undefinedschool/notes-dbs#postgresql)
   - [Instalación](https://github.com/undefinedschool/notes-dbs#instalaci%C3%B3n)
@@ -169,6 +170,10 @@ Podemos _indexar_ tablas por 1 o más columnas. **Una DB puede tener más de un 
 (WIP)
 
 ### ACID
+
+(WIP)
+
+### Normalización
 
 (WIP)
 
