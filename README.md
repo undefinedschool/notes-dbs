@@ -26,6 +26,7 @@
   - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
   - [Transacciones](https://github.com/undefinedschool/notes-dbs#transacciones)
   - [ACID](https://github.com/undefinedschool/notes-dbs#acid)
+- [Bases de Datos Relacionales (SQL) vs No Relacionales (NoSQL)]()
 - [SQL](https://github.com/undefinedschool/notes-dbs#sql)
 - [PostgreSQL](https://github.com/undefinedschool/notes-dbs#postgresql)
   - [Instalación](https://github.com/undefinedschool/notes-dbs#instalaci%C3%B3n)
@@ -62,7 +63,9 @@ Nos permiten guardar grandes cantidades de información de forma organizada, par
 
 ### Base de datos relacional
 
-Una base de datos **_relacional_** es una **colección** de 1 o más [**_tablas_**]() (de 2 dimensiones), relacionadas entre sí. 
+Una base de datos **_relacional_** es una **colección** de 1 o más [**_tablas_**]() (de 2 dimensiones), relacionadas entre sí.
+
+**También se conoce a las bases de datos relacionales, más coloquialmente, como _Bases de Datos SQL_**, aunque es más correcto llamarlas _relacionales_, dado que hay DBs que utilizan otros lenguajes aparte de [_SQL_](https://github.com/undefinedschool/notes-sql/) para realizar consultas.
 
 #### Tabla
 
@@ -168,6 +171,12 @@ Podemos _indexar_ tablas por 1 o más columnas. **Una DB puede tener más de un 
 ### ACID
 
 (WIP)
+
+## Bases de Datos Relacionales (SQL) vs No Relacionales (NoSQL)
+
+(WIP)
+
+Para un resumen de las diferencias, ver [_SQL vs NoSQL or MySQL vs MongoDB_](https://www.youtube.com/watch?v=ZS_kXvOeQ5Y)
 
 ## SQL
 
