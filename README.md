@@ -24,6 +24,8 @@
   - [Foreign Key](https://github.com/undefinedschool/notes-dbs#foreign-key)
   - [Relaciones](https://github.com/undefinedschool/notes-dbs#relaciones)
   - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
+  - [Transacciones](https://github.com/undefinedschool/notes-dbs#transacciones)
+  - [ACID](https://github.com/undefinedschool/notes-dbs#acid)
 - [SQL](https://github.com/undefinedschool/notes-dbs#sql)
 - [PostgreSQL](https://github.com/undefinedschool/notes-dbs#postgresql)
   - [Instalación](https://github.com/undefinedschool/notes-dbs#instalaci%C3%B3n)
@@ -103,7 +105,7 @@ Oracle, MySQL, PostgreSQL, MongoDB, etc. _no son bases de datos en si, sino **Da
 
 > 👉 **Un _DBMS_ puede administrar 1 o varias bases de datos**.
 
-En el caso de las bases de datos relacionales, utilizamos más específicamente, **Relational Database Management Systems** o _RDBMS_. Los principios y conceptos que usaremos aplican para las diferentes variantes mencionadas anteriormente.
+En el caso de las bases de datos relacionales, utilizamos más específicamente, **Relational Database Management Systems** o _RDBMS_ (subcategoría dentro de los DBMS). Los principios y conceptos que usaremos aplican para las diferentes variantes mencionadas anteriormente.
 
 ### Server
 
@@ -143,6 +145,8 @@ El tipo de dato es indistinto, lo importante es que la columna que elijamos como
 
 ### Relaciones
 
+(WIP)
+
 - 1 to 1
 - 1 to many
 - many to many
@@ -156,6 +160,14 @@ Para solucionar este problema existen los **índices**, que permiten que nuestra
 Podemos _indexar_ tablas por 1 o más columnas. **Una DB puede tener más de un índice**.
 
 > ⚠️ **Agregar índices a una DB requiere espacio extra de almacenamiento (espacio en disco), aparte del espacio necesario para almacenar los datos**. Además, cada vez que agreguemos un nuevo registro a una tabla, se actualizarán los índices correspondientes, haciendo esta operación más costosa. Por lo tanto, hay que utilizarlos con la precaución y planificación necesaria.
+
+### Transacciones
+
+(WIP)
+
+### ACID
+
+(WIP)
 
 ## SQL
 
