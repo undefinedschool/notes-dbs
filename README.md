@@ -24,6 +24,7 @@
   - [Foreign Key](https://github.com/undefinedschool/notes-dbs#foreign-key)
   - [Relaciones](https://github.com/undefinedschool/notes-dbs#relaciones)
   - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
+    - [Cuándo usar índices]()
   - [Transacciones](https://github.com/undefinedschool/notes-dbs#transacciones)
   - [ACID](https://github.com/undefinedschool/notes-dbs#acid)
   - [Normalización]()
@@ -164,6 +165,8 @@ Para solucionar este problema existen los **índices**, que permiten que nuestra
 Podemos _indexar_ tablas por 1 o más columnas. **Una DB puede tener más de un índice**.
 
 > ⚠️ **Agregar índices a una DB requiere espacio extra de almacenamiento (espacio en disco), aparte del espacio necesario para almacenar los datos**. Además, cada vez que agreguemos un nuevo registro a una tabla, se actualizarán los índices correspondientes, haciendo esta operación más costosa. Por lo tanto, hay que utilizarlos con la precaución y planificación necesaria.
+
+#### Cuándo usar índices
 
 ### Transacciones
 
