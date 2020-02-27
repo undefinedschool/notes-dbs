@@ -3,7 +3,7 @@
 
 > 👉 Si te resultó útil, **se agradece que lo compartas para que le llegue a más gente!**
 
-![Notas sobre Bases de Datos Relacionales](https://i.imgur.com/g9S0eWn.png)
+# ![Notas sobre Bases de Datos Relacionales](https://i.imgur.com/g9S0eWn.png)
 
 ## Contenido
 
