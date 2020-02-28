@@ -99,10 +99,13 @@ La colección de tablas de una base de datos se conoce como **_schema_**.
 
 #### Tipos de datos
 
+Ver [_PostgreSQL Data Types_](https://www.postgresql.org/docs/12/datatype.html)
+
 #### Características
 
 - datos organizados en tablas, relacionadas entre sí
 - _schema_ estricto, definido al comienzo
+- las columnas de cada tabla tienen [tipos de datos](https://github.com/undefinedschool/notes-dbs#tipos-de-datos) definidos
 
 ### DBMS
 
@@ -124,7 +127,7 @@ El **_server_ de la base de datos** además, **se encarga de correr el _DBMS_ (D
 
 Es un valor de una columna (o conjunto de columnas) que identifica **unívocamente** (1 y sólo 1) cada registro (o fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
 
-> 👉 **Toda tabla de una base de datos relacional debe tener definida una Primary Key**.
+> 👉 **Toda tabla de una base de datos relacional debería tener definida una Primary Key**.
 
 #### Natural keys
 
