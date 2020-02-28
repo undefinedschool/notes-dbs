@@ -24,10 +24,10 @@
   - [Foreign Key](https://github.com/undefinedschool/notes-dbs#foreign-key)
   - [Relaciones](https://github.com/undefinedschool/notes-dbs#relaciones)
   - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
-    - [Cuándo usar índices]()
+    - [Cuándo usar índices](https://github.com/undefinedschool/notes-dbs#cu%C3%A1ndo-usar-%C3%ADndices)
   - [Transacciones](https://github.com/undefinedschool/notes-dbs#transacciones)
   - [ACID](https://github.com/undefinedschool/notes-dbs#acid)
-  - [Normalización]()
+  - [Normalización](https://github.com/undefinedschool/notes-dbs#normalizaci%C3%B3n)
 - [Bases de Datos Relacionales (SQL) vs No Relacionales (NoSQL)](https://github.com/undefinedschool/notes-dbs#bases-de-datos-relacionales-sql-vs-no-relacionales-nosql)
 - [SQL](https://github.com/undefinedschool/notes-dbs#sql)
 - [PostgreSQL](https://github.com/undefinedschool/notes-dbs#postgresql)
@@ -65,7 +65,7 @@ Nos permiten guardar grandes cantidades de información de forma organizada, par
 
 ### Base de datos relacional
 
-Una base de datos **_relacional_** es una **colección** de 1 o más [**_tablas_**]() (de 2 dimensiones), relacionadas entre sí.
+Una base de datos **_relacional_** es una **colección** de 1 o más [**_tablas_**](https://github.com/undefinedschool/notes-dbs#tabla) (de 2 dimensiones), relacionadas entre sí.
 
 **También se conoce a las bases de datos relacionales, más coloquialmente, como _Bases de Datos SQL_**, aunque es más correcto llamarlas _relacionales_, dado que hay DBs que utilizan otros lenguajes aparte de [_SQL_](https://github.com/undefinedschool/notes-sql/) para realizar consultas.
 
@@ -75,9 +75,9 @@ Una base de datos **_relacional_** es una **colección** de 1 o más [**_tablas_
 
 > 👉 Para una guía visual, ver [A Shelfish Starter Guide to Databases](https://illustrated.dev/databases).
 
-Cada tabla contiene **_filas_** y **_columnas_**, que a su vez contienen **datos**. En las tablas definimos la estructura y los [_tipos de datos_]() que estas van a almacenar, al definir las columnas de las mismas.
+Cada tabla contiene **_filas_** y **_columnas_**, que a su vez contienen **datos**. En las tablas definimos la estructura y los [_tipos de datos_](https://github.com/undefinedschool/notes-dbs#tipos-de-datos) que estas van a almacenar, al definir las columnas de las mismas.
 
-**Cada columna le da un nombre y un [tipo]() (texto, numérico, fecha, etc.) al dato almacenado** y cada fila ([_registro_](https://github.com/undefinedschool/notes-dbs#registro)) debe seguir esta estructura.
+**Cada columna le da un nombre y un [tipo](https://github.com/undefinedschool/notes-dbs#tipos-de-datos) (texto, numérico, fecha, etc.) al dato almacenado** y cada fila ([_registro_](https://github.com/undefinedschool/notes-dbs#registro)) debe seguir esta estructura.
 
 ![](https://miro.medium.com/max/736/0*kBYg1f1lVSFE5cY6.PNG)
 
@@ -89,7 +89,7 @@ Los datos de las diferentes tablas pueden estar, como dijimos antes, _relacionad
 
 ##### Registro
 
-Vamos a llamar **_registro_** (_record_) a cada una de las filas de una [tabla](), que representan una unidad de información.
+Vamos a llamar **_registro_** (_record_) a cada una de las filas de una [tabla](https://github.com/undefinedschool/notes-dbs#tabla), que representan una unidad de información.
 
 #### Schema
 
@@ -170,6 +170,8 @@ Podemos _indexar_ tablas por 1 o más columnas. **Una DB puede tener más de un 
 > ⚠️ **Agregar índices a una DB requiere espacio extra de almacenamiento (espacio en disco), aparte del espacio necesario para almacenar los datos**. Además, cada vez que agreguemos un nuevo registro a una tabla, se actualizarán los índices correspondientes, haciendo esta operación más costosa. Por lo tanto, hay que utilizarlos con la precaución y planificación necesaria.
 
 #### Cuándo usar índices
+
+(WIP)
 
 ### Transacciones
 
