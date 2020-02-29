@@ -125,7 +125,7 @@ La forma y organización de los datos dentro de una base de datos, se conoce com
 - `MONEY`: valores numéricos de punto flotante para representar dinero.
 - `ARRAY`: un array de otros datos (poco usual).
 
-Para leer sobre la diferencia entre los tipos `TEXT`, `VARCHAR` y `CHAR`, ver [este post de _StackOVerflow_](https://stackoverflow.com/questions/4848964/postgresql-difference-between-text-and-varchar-character-varying).
+Para leer sobre la diferencia entre los tipos `TEXT`, `VARCHAR` y `CHAR`, ver [este post de _StackOverflow_](https://stackoverflow.com/questions/4848964/postgresql-difference-between-text-and-varchar-character-varying).
 
 Para más detalles, ver [_PostgreSQL Data Types_](https://www.postgresql.org/docs/12/datatype.html)
 
