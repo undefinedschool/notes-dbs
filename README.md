@@ -41,7 +41,9 @@ Una base de datos es un **conjunto de datos relacionados entre si y almacenados 
 
 Nos permiten guardar grandes cantidades de información de forma organizada, para que luego podamos encontrarla y utilizarla más fácilmente.
 
-> Para más detalles, ver [Base de datos - Wikipedia](https://es.wikipedia.org/wiki/Base_de_datos)
+Una base de datos nos permite tener [_persistencia_](https://en.wikipedia.org/wiki/Persistence_(computer_science)) en los datos.
+
+> Para más detalles, ver [Database - Wikipedia](https://en.wikipedia.org/wiki/Database)
 
 ## Qué problema resuelven las bases de datos
 
