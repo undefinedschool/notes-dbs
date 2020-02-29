@@ -32,7 +32,6 @@
 - [SQL](https://github.com/undefinedschool/notes-dbs#sql)
 - [PostgreSQL](https://github.com/undefinedschool/notes-dbs#postgresql)
   - [Instalación](https://github.com/undefinedschool/notes-dbs#instalaci%C3%B3n)
-- [Ejercicios](https://github.com/undefinedschool/notes-dbs#ejercicios)
 
 ---
 
@@ -230,10 +229,3 @@ brew services restart postgresql
 ```
 
 👉 Para más detalles, ver [PostgreSQL (Postgres) - Installation & Overview](https://www.youtube.com/watch?v=fZQI7nBu32M).
-
-## Ejercicios
-
-1. Instalar [PostgreSQL](https://www.postgresql.org/) (Ver [PostgreSQL - Instalación](https://github.com/undefinedschool/notes-dbs#instalaci%C3%B3n)).
-2. Práctica con [SQLBolt](https://sqlbolt.com/).
-3. Práctica en [Codewars - SQL for Beginners](https://www.codewars.com/collections/sql-for-beginners).
-4. Práctica en [PostgreSQL Exercises](https://pgexercises.com/gettingstarted.html).
