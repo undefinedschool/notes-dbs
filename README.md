@@ -19,7 +19,8 @@
     - [Tabla](https://github.com/undefinedschool/notes-dbs#tabla)
       - [Registro](https://github.com/undefinedschool/notes-dbs#registro)
     - [Schema](https://github.com/undefinedschool/notes-dbs#schema)
-    - [Tipos de datos](https://github.com/undefinedschool/notes-dbs#tipos-de-datos)
+    - [Tipos de datos](https://github.com/undefinedschool/notes-dbs#constraints)
+    - [Constraints](https://github.com/undefinedschool/notes-dbs#tipos-de-datos)
     - [Características](https://github.com/undefinedschool/notes-dbs#caracter%C3%ADsticas)
   - [DBMS](https://github.com/undefinedschool/notes-dbs#dbms)
   - [Server](https://github.com/undefinedschool/notes-dbs#server)
@@ -122,6 +123,82 @@ La forma y organización de los datos dentro de una base de datos, se conoce com
 Para leer sobre la diferencia entre los tipos `TEXT`, `VARCHAR` y `CHAR`, ver [este post de _StackOVerflow_](https://stackoverflow.com/questions/4848964/postgresql-difference-between-text-and-varchar-character-varying).
 
 Para más detalles, ver [_PostgreSQL Data Types_](https://www.postgresql.org/docs/12/datatype.html)
+
+#### Constraints
+
+Las _constraints_ son ciertas restricciones aplicadas sobre una tabla, creadas implícita o explícitamente por el [_schema_](https://github.com/undefinedschool/notes-dbs#schema). _Constraints_ son una parte clave del [_DDL_](https://github.com/undefinedschool/notes-sql/blob/master/README.md#ddl-comandos-para-modificar-el-schema). 
+
+> 👉 **Violar una _constraint_ va a generar un error de parte de la base de datos y (generalmente) abortar la operación**.
+
+##### `NOT NULL`
+
+Establece que al crear o actualizar un registro, el valor de un campo **no puede ser `NULL`**.
+
+```SQL
+CREATE TABLE college_students (
+  id SERIAL PRIMARY KEY,
+  last_name VARCHAR(50),
+  first_name VARCHAR(50),
+  major VARCHAR(50) NOT NULL
+);
+```
+
+##### `UNIQUE`
+
+Establece que **el valor de un campo para un registro debe ser único en la tabla**.
+
+```SQL
+CREATE TABLE phonebook (
+  id SERIAL PRIMARY KEY,
+  last_name VARCHAR(50),
+  first_name VARCHAR(50),
+  phone_number VARCHAR(7) UNIQUE
+);
+```
+
+##### `PRIMARY KEY`
+
+Una [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key) identifica un registro, el cual tiene a su vez, la propiedad de ser tanto [`UNIQUE`]() como [NOT NULL]().
+
+```SQL
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  first_name TEXT,
+  last_name TEXT
+);
+```
+
+##### `FOREIGN KEY`
+
+Asocia los datos de una columna a los de otra columna, en una tabla diferente. **La base de datos se asegura de que los datos de la _Foreign key_ existan en la tabla que la _Foreign Key_ referencia. 
+
+```SQL
+CREATE TABLE people (
+  id SERIAL PRIMARY KEY,
+  first_name TEXT,
+  last_name TEXT
+);
+
+CREATE TABLE interests (
+  id SERIAL PRIMARY KEY,
+  interest TEXT,
+  people_id INTEGER REFERENCES people
+);
+```
+
+En el ejemplo anterior, los valores de la columna `people_id` referencian al `id` de la tabla `people`.
+
+##### `CHECK`
+
+Recibe una expresión que debe evaluar a `true` para que la operación se concrete.
+
+```SQL
+CREATE TABLE products (
+  product_no SERIAL PRIMARY KEY,
+  name TEXT,
+  price NUMERIC CHECK (price > 0)
+);
+```
 
 #### Características
 
