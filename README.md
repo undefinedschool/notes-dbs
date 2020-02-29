@@ -105,7 +105,23 @@ La forma y organización de los datos dentro de una base de datos, se conoce com
 
 #### Tipos de datos
 
-Ver [_PostgreSQL Data Types_](https://www.postgresql.org/docs/12/datatype.html)
+**En bases de datos relacionales** como Postgres, **tenemos que especificar el tipo de datos que vamos a almacenar en un determinado campo**. Algunos de los tipos de datos que nos provee Postgres son:
+
+- `SERIAL`: entero _auto-incrementable_, usualmente utilizado para IDs.
+- `TEXT`: fragmentos de texto (muy similar a `VARCHAR`).
+- `VARCHAR`: caracteres de longitud variable.
+- `CHAR`: caracteres de longitud fija.
+- `BOOLEAN`: un booleano.
+- `INTEGER`: un entero.
+- `REAL`: un número de punto flotante (por ejemplo, `3.141593`).
+- `DECIMAL, NUMERIC`: valores numéricos de punto flotante con una precisión definida.
+- `DATE`: para almacenar fechas.
+- `MONEY`: valores numéricos de punto flotante para representar dinero.
+- `ARRAY`: un array de otros datos (poco usual).
+
+Para leer sobre la diferencia entre los tipos `TEXT`, `VARCHAR` y `CHAR`, ver [este post de _StackOVerflow_](https://stackoverflow.com/questions/4848964/postgresql-difference-between-text-and-varchar-character-varying).
+
+Para más detalles, ver [_PostgreSQL Data Types_](https://www.postgresql.org/docs/12/datatype.html)
 
 #### Características
 
