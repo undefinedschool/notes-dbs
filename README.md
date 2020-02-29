@@ -94,7 +94,7 @@ Vamos a llamar **_registro_** (_record_) a cada una de las filas de una [tabla](
 
 #### Schema
 
-La colección de tablas de una base de datos se conoce como **_schema_**.
+La forma y organización de los datos dentro de una base de datos, se conoce como **_schema_**. Representa la colección y asociación de [tablas](https://github.com/undefinedschool/notes-dbs#tabla).
 
 👉 En una _base de datos relacional_, **el _schema_ debe definirse antes de poder interactuar con la misma**. Todos los _registros_ de una base de datos relacional deben seguir el esquema definido.
 
