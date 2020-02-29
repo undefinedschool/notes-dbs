@@ -163,7 +163,7 @@ CREATE TABLE phonebook (
 
 ##### `PRIMARY KEY`
 
-Una [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key) identifica un registro, el cual tiene a su vez, la propiedad de ser tanto [`UNIQUE`]() como [NOT NULL]().
+Una [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key) identifica un registro, el cual tiene a su vez, la propiedad de ser tanto [`UNIQUE`]() como [`NOT NULL`]().
 
 ```SQL
 CREATE TABLE users (
