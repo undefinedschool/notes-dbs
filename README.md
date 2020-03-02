@@ -32,7 +32,7 @@
   - [Primary Key](https://github.com/undefinedschool/notes-dbs#primary-key)
     - [Natural keys](https://github.com/undefinedschool/notes-dbs#natural-keys)
     - [Synthetic keys](https://github.com/undefinedschool/notes-dbs#synthetic-keys)
-  - [Foreign Key](https://github.com/undefinedschool/notes-dbs#foreign-key)
+  - [Foreign Key](https://github.com/undefinedschool/notes-dbs#foreign-key-1)
   - [Relaciones](https://github.com/undefinedschool/notes-dbs#relaciones)
   - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
     - [Cuándo usar índices](https://github.com/undefinedschool/notes-dbs#cu%C3%A1ndo-usar-%C3%ADndices)
@@ -175,7 +175,9 @@ CREATE TABLE users (
 
 ##### `FOREIGN KEY`
 
-Asocia los datos de una columna a los de otra columna, en una tabla diferente. **La base de datos se asegura de que los datos de la _Foreign key_ existan en la tabla que la _Foreign Key_ referencia. 
+Asocia los datos de una columna a los de otra columna, en una tabla diferente. 
+
+> 👉 **La base de datos se asegura de que los datos de la _Foreign key_ existan en la tabla que la _Foreign Key_ referencia**. 
 
 ```SQL
 CREATE TABLE people (
