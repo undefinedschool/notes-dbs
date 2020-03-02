@@ -248,7 +248,7 @@ Se conocen como _synthetic keys_ o _surrogate keys_ (claves sustitutas) a las _P
 
 Se trata generalmente de valores numéricos, como pueden ser `product_id` o `customer_id`, etc. 
 
-> Para más detalles, ver [Natural Key vs Surrogate Key](https://www.databasejournal.com/features/mssql/article.php/3922066/SQL-Server-Natural-Key-Verses-Surrogate-Key.htm)
+> Para más detalles, ver [Natural Key vs Surrogate Key](https://www.databasejournal.com/features/mssql/article.php/3922066/SQL-Server-Natural-Key-Verses-Surrogate-Key.htm).
 
 ### Foreign Key
 
@@ -262,7 +262,11 @@ El tipo de dato es indistinto, lo importante es que la columna que elijamos como
 
 Necesitamos describir formalmente las relaciones entre las tablas de nuestra base de datos. **La forma en que describimos las relaciones es a través de las claves** (Primary Keys, Foreign Keys).
 
-Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `customer_id`. En la primera, cumple el rol de [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key-1), mientras que en la segunda, cumple el rol de [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1).
+Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `customer_id`. En la tabla `Customer`, cumple el rol de [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key-1), mientras que en la tabla `Order`, cumple el rol de [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1) 
+
+> ⚠️ **Notar que esto implica que `customer_id` debe ser única en la tabla `Customer`, pero no necesariamente en `Order`**.
+
+#### `Customer`
 
 | customer_id | first_name | last_name | email          | address       |
 |-------------|------------|-----------|----------------|---------------|
@@ -270,11 +274,19 @@ Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `cus
 | 368         | Lynn       | Allen     | la1942@...     | 1016B 1st...  |
 | 369         | Lee        | Stout     | lee@...        | 47 Main St... |
 
+#### `Order`
+
 | order_id | date     | quantity | total    | customer_id |
 |----------|----------|----------|----------|-------------|
 | 1198     | 3/1/2011 | 17       | $340.00  | 367         |
 | 1199     | 3/2/2011 | 47       | $902.00  | 367         |
 | 1200     | 3/2/2011 | 104      | $1500.00 | 368         |
+
+Este tipo de relación se conoce como [_1 to many_](), ya que cada `customer` puede tener asociadas 1 o más `orders`.
+
+> ⚠️ **Notar que la inversa no es cierta, en este caso cada orden puede tener 1 (y sólo 1) cliente asociado**.
+
+Este es el tipo de relación más común entre tablas.
 
 #### Tipos de relaciones
 
