@@ -29,11 +29,12 @@
     - [Características](https://github.com/undefinedschool/notes-dbs#caracter%C3%ADsticas)
   - [DBMS](https://github.com/undefinedschool/notes-dbs#dbms)
   - [Server](https://github.com/undefinedschool/notes-dbs#server)
-  - [Primary Key](https://github.com/undefinedschool/notes-dbs#primary-key)
+  - [Primary Key](https://github.com/undefinedschool/notes-dbs#primary-key-1)
     - [Natural keys](https://github.com/undefinedschool/notes-dbs#natural-keys)
     - [Synthetic keys](https://github.com/undefinedschool/notes-dbs#synthetic-keys)
   - [Foreign Key](https://github.com/undefinedschool/notes-dbs#foreign-key-1)
   - [Relaciones](https://github.com/undefinedschool/notes-dbs#relaciones)
+    - [Tipos de relaciones](https://github.com/undefinedschool/notes-dbs#tipos-de-relaciones)
   - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
     - [Cuándo usar índices](https://github.com/undefinedschool/notes-dbs#cu%C3%A1ndo-usar-%C3%ADndices)
   - [Transacciones](https://github.com/undefinedschool/notes-dbs#transacciones)
@@ -163,7 +164,7 @@ CREATE TABLE phonebook (
 
 ##### `PRIMARY KEY`
 
-Una [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key) identifica un registro, el cual tiene a su vez, la propiedad de ser tanto [`UNIQUE`]() como [`NOT NULL`]().
+Una [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key-1) identifica un registro, el cual tiene a su vez, la propiedad de ser tanto [`UNIQUE`](https://github.com/undefinedschool/notes-dbs#unique) como [`NOT NULL`](https://github.com/undefinedschool/notes-dbs#not-null).
 
 ```SQL
 CREATE TABLE users (
@@ -177,7 +178,7 @@ CREATE TABLE users (
 
 Asocia los datos de una columna a los de otra columna, en una tabla diferente. 
 
-> 👉 **La base de datos se asegura de que los datos de la _Foreign key_ existan en la tabla que la _Foreign Key_ referencia**. 
+> 👉 **La base de datos se asegura de que los datos de la [_Foreign key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1) existan en la tabla que la _Foreign Key_ referencia**. 
 
 ```SQL
 CREATE TABLE people (
@@ -239,7 +240,7 @@ Es un valor de una columna (o conjunto de columnas) que identifica **unívocamen
 
 Se conocen como _natural keys_ (claves naturales) a las _Primary Keys_ que **se generan a partir de los datos de una tabla**.
 
-Son valores de columnas que tienen relación col el resto de las columnas de un registro dado. Por ejemplo, email, número de seguridad social, número de pasaporte, ISBN, etc.
+Son **valores de columnas _naturalmente_ únicos**, que tienen relación con el resto de las columnas de un registro dado. Por ejemplo, el email, número de seguridad social, número de pasaporte, ISBN, etc.
 
 #### Synthetic keys
 
@@ -259,7 +260,23 @@ El tipo de dato es indistinto, lo importante es que la columna que elijamos como
 
 ### Relaciones
 
-(WIP)
+Necesitamos describir formalmente las relaciones entre las tablas de nuestra base de datos. **La forma en que describimos las relaciones es a través de las claves** (Primary Keys, Foreign Keys).
+
+Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `customer_id`. En la primera, cumple el rol de [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key-1), mientras que en la segunda, cumple el rol de [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1).
+
+| customer_id | first_name | last_name | email          | address       |
+|-------------|------------|-----------|----------------|---------------|
+| 367         | Michelle   | Blackwell | mblackwell@... | 22 Acacia...  |
+| 368         | Lynn       | Allen     | la1942@...     | 1016B 1st...  |
+| 369         | Lee        | Stout     | lee@...        | 47 Main St... |
+
+| order_id | date     | quantity | total    | customer_id |
+|----------|----------|----------|----------|-------------|
+| 1198     | 3/1/2011 | 17       | $340.00  | 367         |
+| 1199     | 3/2/2011 | 47       | $902.00  | 367         |
+| 1200     | 3/2/2011 | 104      | $1500.00 | 368         |
+
+#### Tipos de relaciones
 
 - 1 to 1
 - 1 to many
