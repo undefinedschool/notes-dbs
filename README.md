@@ -252,7 +252,7 @@ Se trata generalmente de valores numéricos, como pueden ser `product_id` o `cus
 
 ### Foreign Key
 
-Es un valor o campo (o grupo de campos) que identifica **unívocamente** un registro (fila) de otra tabla, es decir, hace referencia a una [**Primary Key**](https://github.com/undefinedschool/notes-dbs#primary-key) de otra tabla.
+Es un valor o campo (o grupo de campos) que identifica **unívocamente** un registro (fila) de otra tabla, es decir, hace referencia a una [**Primary Key**](https://github.com/undefinedschool/notes-dbs#primary-key-1) de otra tabla.
 
 El tipo de dato es indistinto, lo importante es que la columna que elijamos como _Primary Key_ no contenga valores repetidos.
 
