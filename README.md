@@ -5,7 +5,7 @@
 
 # ![Notas sobre Bases de Datos Relacionales](https://i.imgur.com/g9S0eWn.png)
 
-## Notas Bases de Datos
+## Notas sobre Bases de Datos
 
 - [**Bases de Datos**](https://github.com/undefinedschool/notes-dbs)
 - [**SQL**](https://github.com/undefinedschool/notes-sql/)
