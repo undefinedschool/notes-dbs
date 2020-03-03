@@ -43,8 +43,8 @@
   - [Relaciones](https://github.com/undefinedschool/notes-dbs#relaciones)
     - [Tipos de relaciones](https://github.com/undefinedschool/notes-dbs#tipos-de-relaciones)
       - [1 to 1](https://github.com/undefinedschool/notes-dbs#1-to-1)
-      - [1 to many]()
-      - [many to many]()
+      - [1 to many](https://github.com/undefinedschool/notes-dbs#1-to-many)
+      - [many to many](https://github.com/undefinedschool/notes-dbs#many-to-many)
   - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
     - [Cuándo usar índices](https://github.com/undefinedschool/notes-dbs#cu%C3%A1ndo-usar-%C3%ADndices)
   - [Transacciones](https://github.com/undefinedschool/notes-dbs#transacciones)
@@ -332,7 +332,7 @@ Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `cus
 | 1199     | 3/2/2011 | 47       | $902.00  | 367         |
 | 1200     | 3/2/2011 | 104      | $1500.00 | 368         |
 
-Este tipo de relación se conoce como [_1 to many_](), ya que cada `customer` puede tener asociadas 1 o más `orders`.
+Este tipo de relación se conoce como [_1 to many_](https://github.com/undefinedschool/notes-dbs#1-to-many), ya que cada `customer` puede tener asociadas 1 o más `orders`.
 
 > ⚠️ **Notar que la inversa no es cierta, en este caso cada orden puede tener 1 (y sólo 1) cliente asociado**.
 
@@ -344,19 +344,19 @@ Este es el tipo de relación más común entre tablas.
 
 ##### 1 to 1
 
-En las relaciones _1 a 1_, una _entidad_ sólo tiene relación con otra y viceversa. Por ejemplo, un número de pasaporte puede estar asociado a una única persona y cada persona puede tener sólo 1 número de pasaporte.
+**En las relaciones _1 a 1_, una _entidad_ sólo tiene relación con otra y viceversa**. Por ejemplo, un número de pasaporte puede estar asociado a una única persona y cada persona puede tener sólo 1 número de pasaporte.
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ##### 1 to many
 
-(WIP)
+**En las relaciones _1 a muchos_, una _entidad_ puede tener relaciones con 1 o más entidades (pero no a la inversa)**. Por ejemplo, en la sección de comentarios de un blog, un usuario puede tener muchos comentarios asociados (en diferentes posts), pero cada comentario pertenece a un único usuario.
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ##### many to many
 
-(WIP)
+**En las relaciones _muchos a muchos_, muchas _entidades_ pueden tener relaciones con 1 o más entidades y viceversa**. Por ejemplo, muchos estudiantes pueden estar cursando más de 1 asignatura y a la vez cada asignatura puede tener más de 1 estudiante anotado.
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
