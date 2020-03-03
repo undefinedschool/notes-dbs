@@ -5,10 +5,17 @@
 
 # ![Notas sobre Bases de Datos Relacionales](https://i.imgur.com/g9S0eWn.png)
 
-## Notas sobre Bases de Datos
+## Notas relacionadas
 
-- [**Bases de Datos**](https://github.com/undefinedschool/notes-dbs)
+### `databases`
+
 - [**SQL**](https://github.com/undefinedschool/notes-sql/)
+
+### `backend`
+
+- [**NodeJS**](https://github.com/undefinedschool/notes-nodejs)
+- [**Express**](https://github.com/undefinedschool/notes-expressjs)
+- [**APIs**](https://github.com/undefinedschool/notes-apis)
 
 ## Contenido
 
