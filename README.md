@@ -354,6 +354,19 @@ Para diseñar relaciones _1 to 1_, la forma más común es poner los datos en di
 
 En este caso, el `user_id` 1 está asociado sólo con el `username` ltorvalds y viceversa.
 
+[![Database Design - Designing One-to-One Relationships](https://img.youtube.com/vi/M-Rw21NGORo/0.jpg)](https://www.youtube.com/watch?v=M-Rw21NGORo)
+> Ver [Database Design - Designing One-to-One Relationships](https://www.youtube.com/watch?v=M-Rw21NGORo)
+
+También podemos tener relaciones _1 to 1_ con los datos distribuídos en 2 tablas, por ejemplo, si queremos relacionar usuarios con tarjetas de crédito, podemos hacer
+
+| id | fist_name | last_name | card_id |
+|---------|-----------|-----------|---------|
+| 1       | Caleb     | Curry     | 50      |
+
+| id | issue_date | max_ammount | user_id |
+|----|------------|-------------|---------|
+| 50 | 2020/03/01 | 5000        | 1       |
+
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ##### 1 to many
