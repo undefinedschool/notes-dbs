@@ -312,32 +312,6 @@ El tipo de dato es indistinto, lo importante es que la columna que elijamos como
 
 Necesitamos describir formalmente las relaciones entre las tablas de nuestra base de datos. **La forma en que describimos las relaciones es a través de las claves** (Primary Keys, Foreign Keys).
 
-Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `customer_id`. En la tabla `Customer`, cumple el rol de [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key-1), mientras que en la tabla `Order`, cumple el rol de [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1) 
-
-> ⚠️ **Notar que esto implica que `customer_id` debe ser único en la tabla `Customer`, pero no necesariamente en `Order`**.
-
-#### `Customer`
-
-| customer_id | first_name | last_name | email          | address       |
-|-------------|------------|-----------|----------------|---------------|
-| 367         | Michelle   | Blackwell | mblackwell@... | 22 Acacia...  |
-| 368         | Lynn       | Allen     | la1942@...     | 1016B 1st...  |
-| 369         | Lee        | Stout     | lee@...        | 47 Main St... |
-
-#### `Order`
-
-| order_id | date     | quantity | total    | customer_id |
-|----------|----------|----------|----------|-------------|
-| 1198     | 3/1/2011 | 17       | $340.00  | 367         |
-| 1199     | 3/2/2011 | 47       | $902.00  | 367         |
-| 1200     | 3/2/2011 | 104      | $1500.00 | 368         |
-
-Este tipo de relación se conoce como [_1 to many_](https://github.com/undefinedschool/notes-dbs#1-to-many), ya que cada `customer` puede tener asociadas 1 o más `orders`.
-
-> ⚠️ **Notar que la inversa no es cierta, en este caso cada orden puede tener 1 (y sólo 1) cliente asociado**.
-
-Este es el tipo de relación más común entre tablas.
-
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 #### Tipos de relaciones
@@ -371,7 +345,33 @@ También podemos tener relaciones _1 to 1_ con los datos distribuídos en 2 tabl
 
 ##### 1 to many
 
-**En las relaciones _1 a muchos_, una _entidad_ puede tener relaciones con 1 o más entidades (pero no a la inversa)**. Por ejemplo, en la sección de comentarios de un blog, un usuario puede tener muchos comentarios asociados (en diferentes posts), pero cada comentario pertenece a un único usuario.
+**En las relaciones _1 a muchos_, una _entidad_ puede tener relaciones con 1 o más entidades (pero no a la inversa)**. 
+
+Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `customer_id`. En la tabla `Customer`, cumple el rol de [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key-1), mientras que en la tabla `Order`, cumple el rol de [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1) 
+
+> ⚠️ **Notar que esto implica que `customer_id` debe ser único en la tabla `Customer`, pero no necesariamente en `Order`**.
+
+#### `Customer`
+
+| customer_id | first_name | last_name | email          | address       |
+|-------------|------------|-----------|----------------|---------------|
+| 367         | Michelle   | Blackwell | mblackwell@... | 22 Acacia...  |
+| 368         | Lynn       | Allen     | la1942@...     | 1016B 1st...  |
+| 369         | Lee        | Stout     | lee@...        | 47 Main St... |
+
+#### `Order`
+
+| order_id | date     | quantity | total    | customer_id |
+|----------|----------|----------|----------|-------------|
+| 1198     | 3/1/2011 | 17       | $340.00  | 367         |
+| 1199     | 3/2/2011 | 47       | $902.00  | 367         |
+| 1200     | 3/2/2011 | 104      | $1500.00 | 368         |
+
+Este tipo de relación se conoce como [_1 to many_](https://github.com/undefinedschool/notes-dbs#1-to-many), ya que cada `customer` puede tener asociadas 1 o más `orders`.
+
+> ⚠️ **Notar que la inversa no es cierta, en este caso cada orden puede tener 1 (y sólo 1) cliente asociado**.
+
+Este es el tipo de relación más común en bases de datos relacionales.
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
