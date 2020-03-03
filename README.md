@@ -346,6 +346,14 @@ Este es el tipo de relación más común entre tablas.
 
 **En las relaciones _1 a 1_, una _entidad_ sólo tiene relación con otra y viceversa**. Por ejemplo, un número de pasaporte puede estar asociado a una única persona y cada persona puede tener sólo 1 número de pasaporte.
 
+Para diseñar relaciones _1 to 1_, la forma más común es poner los datos en diferentes columnas de la misma tabla. Por ejemplo, si queremos relacionar un `user_id` con un `username`
+
+| user_id | fist_name | last_name | username  |
+|---------|-----------|-----------|-----------|
+| 1       | Linus     | Torvalds  | ltorvalds |
+
+En este caso, el `user_id` 1 está asociado sólo con el `username` ltorvalds y viceversa.
+
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ##### 1 to many
