@@ -35,6 +35,9 @@
   - [Foreign Key](https://github.com/undefinedschool/notes-dbs#foreign-key-1)
   - [Relaciones](https://github.com/undefinedschool/notes-dbs#relaciones)
     - [Tipos de relaciones](https://github.com/undefinedschool/notes-dbs#tipos-de-relaciones)
+      - [1 to 1]()
+      - [1 to many]()
+      - [many to many]()
   - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
     - [Cuándo usar índices](https://github.com/undefinedschool/notes-dbs#cu%C3%A1ndo-usar-%C3%ADndices)
   - [Transacciones](https://github.com/undefinedschool/notes-dbs#transacciones)
@@ -264,7 +267,7 @@ Necesitamos describir formalmente las relaciones entre las tablas de nuestra bas
 
 Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `customer_id`. En la tabla `Customer`, cumple el rol de [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key-1), mientras que en la tabla `Order`, cumple el rol de [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1) 
 
-> ⚠️ **Notar que esto implica que `customer_id` debe ser única en la tabla `Customer`, pero no necesariamente en `Order`**.
+> ⚠️ **Notar que esto implica que `customer_id` debe ser único en la tabla `Customer`, pero no necesariamente en `Order`**.
 
 #### `Customer`
 
@@ -290,9 +293,13 @@ Este es el tipo de relación más común entre tablas.
 
 #### Tipos de relaciones
 
-- 1 to 1
-- 1 to many
-- many to many
+##### 1 to 1
+
+En las relaciones _1 a 1_, una _entidad_ sólo tiene relación con otra y viceversa. Por ejemplo, un número de pasaporte puede estar asociado a una única persona y cada persona puede tener sólo 1 número de pasaporte.
+
+##### 1 to many
+
+##### many to many
 
 ### Índices
 
