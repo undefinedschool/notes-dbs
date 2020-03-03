@@ -60,6 +60,8 @@ Una base de datos nos permite tener [_persistencia_](https://en.wikipedia.org/wi
 
 > Para más detalles, ver [Database - Wikipedia](https://en.wikipedia.org/wiki/Database)
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ## Qué problema resuelven las bases de datos
 
 **Tenemos datos que necesitamos almacenar**, que pueden ser de diferentes tipos (como datos de clientes, información sobre un producto, nombres, fechas de nacimiento, cantidades, etc). **Pero el problema no pasa por tener datos en si**, este no es un motivo suficiente para necesitar usar una base de datos. Los problemas que enfrentamos son los siguientes:
@@ -77,6 +79,8 @@ Una base de datos nos permite tener [_persistencia_](https://en.wikipedia.org/wi
 > 👉 Una base de datos nos da una **estructura** y nos permite setear un conjunto de **reglas** sobre los datos que guardamos.
 > A través de una base de datos, podemos **almacenar, manipular y obtener** datos.
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ## Conceptos
 
 ### Base de datos relacional
@@ -84,6 +88,8 @@ Una base de datos nos permite tener [_persistencia_](https://en.wikipedia.org/wi
 Una base de datos **_relacional_** es una **colección** de 1 o más [**_tablas_**](https://github.com/undefinedschool/notes-dbs#tabla) (de 2 dimensiones), relacionadas entre sí.
 
 **También se conoce a las bases de datos relacionales, más coloquialmente, como _Bases de Datos SQL_**, aunque es más correcto llamarlas _relacionales_, dado que hay DBs que utilizan otros lenguajes aparte de [_SQL_](https://github.com/undefinedschool/notes-sql/) para realizar consultas.
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 #### Tabla
 
@@ -103,15 +109,21 @@ Los datos de las diferentes tablas pueden estar, como dijimos antes, _relacionad
 
 > 👉 **Las tablas y sus columnas deben definirse de antemano, antes de poder cargar datos en la DB.**
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ##### Registro
 
 Vamos a llamar **_registro_** (_record_) a cada una de las filas de una [tabla](https://github.com/undefinedschool/notes-dbs#tabla), que representan una unidad de información.
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 #### Schema
 
 La forma y organización de los datos dentro de una base de datos, se conoce como **_schema_**. Representa la colección y asociación de [tablas](https://github.com/undefinedschool/notes-dbs#tabla).
 
 👉 En una _base de datos relacional_, **el _schema_ debe definirse antes de poder interactuar con la misma**. Todos los _registros_ de una base de datos relacional deben seguir el esquema definido.
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 #### Tipos de datos
 
@@ -133,11 +145,15 @@ Para leer sobre la diferencia entre los tipos `TEXT`, `VARCHAR` y `CHAR`, ver [e
 
 Para más detalles, ver [_PostgreSQL Data Types_](https://www.postgresql.org/docs/12/datatype.html)
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 #### Constraints
 
 Las _constraints_ son ciertas restricciones aplicadas sobre una tabla, creadas implícita o explícitamente por el [_schema_](https://github.com/undefinedschool/notes-dbs#schema). _Constraints_ son una parte clave del [_DDL_](https://github.com/undefinedschool/notes-sql/blob/master/README.md#ddl-comandos-para-modificar-el-schema). 
 
 > 👉 **Violar una _constraint_ va a generar un error de parte de la base de datos y (generalmente) abortar la operación**.
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ##### `NOT NULL`
 
@@ -152,6 +168,8 @@ CREATE TABLE college_students (
 );
 ```
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ##### `UNIQUE`
 
 Establece que **el valor de un campo para un registro debe ser único en la tabla**.
@@ -165,6 +183,8 @@ CREATE TABLE phonebook (
 );
 ```
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ##### `PRIMARY KEY`
 
 Una [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key-1) identifica un registro, el cual tiene a su vez, la propiedad de ser tanto [`UNIQUE`](https://github.com/undefinedschool/notes-dbs#unique) como [`NOT NULL`](https://github.com/undefinedschool/notes-dbs#not-null).
@@ -176,6 +196,8 @@ CREATE TABLE users (
   last_name TEXT
 );
 ```
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ##### `FOREIGN KEY`
 
@@ -199,6 +221,8 @@ CREATE TABLE interests (
 
 En el ejemplo anterior, los valores de la columna `people_id` referencian al `id` de la tabla `people`.
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ##### `CHECK`
 
 Recibe una expresión que debe evaluar a `true` para que la operación se concrete.
@@ -211,11 +235,15 @@ CREATE TABLE products (
 );
 ```
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 #### Características
 
 - datos organizados en tablas, relacionadas entre sí
 - _schema_ estricto, definido al comienzo
 - las columnas de cada tabla tienen [tipos de datos](https://github.com/undefinedschool/notes-dbs#tipos-de-datos) definidos
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ### DBMS
 
@@ -225,6 +253,8 @@ Oracle, MySQL, PostgreSQL, MongoDB, etc. _no son bases de datos en si, sino **Da
 
 En el caso de las bases de datos relacionales, utilizamos más específicamente, **Relational Database Management Systems** o _RDBMS_ (subcategoría dentro de los DBMS). Los principios y conceptos que usaremos aplican para las diferentes variantes mencionadas anteriormente.
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ### Server
 
 La mayoría de las **bases de datos** siguen la **arquitectura _cliente-servidor_**.
@@ -233,17 +263,23 @@ Es en el _server_ donde se encuentran alojados los datos.
 
 El **_server_ de la base de datos** además, **se encarga de correr el _DBMS_ (Database Management System)**. A través de un _cliente_, nos conectamos al _server_ de la DB, para crear nuestra base de datos e interactuar con ella.
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ### Primary Key
 
 Es un valor de una columna (o conjunto de columnas) que identifica **unívocamente** (1 y sólo 1) cada registro (o fila) de una tabla. Generalmente se corresponde con el campo `id` de la tabla.
 
 > 👉 **Toda tabla de una base de datos relacional debería tener definida una Primary Key**.
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 #### Natural keys
 
 Se conocen como _natural keys_ (claves naturales) a las _Primary Keys_ que **se generan a partir de los datos de una tabla**.
 
 Son **valores de columnas _naturalmente_ únicos**, que tienen relación con el resto de las columnas de un registro dado. Por ejemplo, el email, número de seguridad social, número de pasaporte, ISBN, etc.
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 #### Synthetic keys
 
@@ -253,6 +289,8 @@ Se trata generalmente de valores numéricos, como pueden ser `product_id` o `cus
 
 > Para más detalles, ver [Natural Key vs Surrogate Key](https://www.databasejournal.com/features/mssql/article.php/3922066/SQL-Server-Natural-Key-Verses-Surrogate-Key.htm).
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ### Foreign Key
 
 Es un valor o campo (o grupo de campos) que identifica **unívocamente** un registro (fila) de otra tabla, es decir, hace referencia a una [**Primary Key**](https://github.com/undefinedschool/notes-dbs#primary-key-1) de otra tabla.
@@ -260,6 +298,8 @@ Es un valor o campo (o grupo de campos) que identifica **unívocamente** un regi
 El tipo de dato es indistinto, lo importante es que la columna que elijamos como _Primary Key_ no contenga valores repetidos.
 
 > 👉 **Una tabla puede contener múltiples Foreign Keys**, dependiendo de sus relaciones con otras tablas.
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ### Relaciones
 
@@ -291,15 +331,27 @@ Este tipo de relación se conoce como [_1 to many_](), ya que cada `customer` pu
 
 Este es el tipo de relación más común entre tablas.
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 #### Tipos de relaciones
 
 ##### 1 to 1
 
 En las relaciones _1 a 1_, una _entidad_ sólo tiene relación con otra y viceversa. Por ejemplo, un número de pasaporte puede estar asociado a una única persona y cada persona puede tener sólo 1 número de pasaporte.
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ##### 1 to many
 
+(WIP)
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ##### many to many
+
+(WIP)
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ### Índices
 
@@ -311,21 +363,31 @@ Podemos _indexar_ tablas por 1 o más columnas. **Una DB puede tener más de un 
 
 > ⚠️ **Agregar índices a una DB requiere espacio extra de almacenamiento (espacio en disco), aparte del espacio necesario para almacenar los datos**. Además, cada vez que agreguemos un nuevo registro a una tabla, se actualizarán los índices correspondientes, haciendo esta operación más costosa. Por lo tanto, hay que utilizarlos con la precaución y planificación necesaria.
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 #### Cuándo usar índices
 
 (WIP)
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ### Transacciones
 
 (WIP)
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ### ACID
 
 (WIP)
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ### Normalización
 
 (WIP)
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ## Bases de Datos Relacionales (SQL) vs No Relacionales (NoSQL)
 
@@ -333,11 +395,15 @@ Podemos _indexar_ tablas por 1 o más columnas. **Una DB puede tener más de un 
 
 Para un resumen de las diferencias, ver [_SQL vs NoSQL or MySQL vs MongoDB_](https://www.youtube.com/watch?v=ZS_kXvOeQ5Y)
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ## SQL
 
 Es el lenguaje que vamos a utilizar para hacer consultas e interactuar con una _base de datos relacional_.
 
 👉 Ver [notas de SQL](https://github.com/undefinedschool/notes-sql/).
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ## PostgreSQL
 
@@ -346,6 +412,8 @@ Es el lenguaje que vamos a utilizar para hacer consultas e interactuar con una _
 Provee soporte para la mayor parte del _standard SQL_ y agrega algunas features propias (incluso [podemos utilizar JavaScript para crear funciones _custom_](https://blog.heroku.com/javascript_in_your_postgres)).
 
 Al tratarse de una _base de datos relacional_, vamos a urilizar SQL para realizar _queries_ con los datos almacenados en esta.
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ### Instalación
 
@@ -372,3 +440,5 @@ brew services restart postgresql
 ```
 
 👉 Para más detalles, ver [PostgreSQL (Postgres) - Installation & Overview](https://www.youtube.com/watch?v=fZQI7nBu32M).
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
