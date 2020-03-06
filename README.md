@@ -9,6 +9,7 @@
 
 ### `databases`
 
+- [**Bases de Datos - Relaciones**](https://github.com/undefinedschool/notes-dbs-relationships/)
 - [**SQL**](https://github.com/undefinedschool/notes-sql/)
 
 ### `backend`
