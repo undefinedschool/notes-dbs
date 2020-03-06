@@ -381,7 +381,27 @@ Este es el tipo de relación más común en bases de datos relacionales.
 
 > 👉 **En la mayoría de las bases de datos relacionales no podemos expresar relaciones _many to many_ directamente**, sino que tendremos que hacerlo indirectamente.
 
-Por ejemplo,
+Por ejemplo, podemos tener una tabla de autores (`authors`), otra de libros (`books`) y relacionar los autores con los libros de forma tal que un/a autor/a pueda estar asociado a uno o más libros, es decir, una relación del tipo [_1 to many_](https://github.com/undefinedschool/notes-dbs#1-to-many). 
+
+###### `authors`
+
+| author_id (PK) | first_name | last_name | email          |
+|-----------|------------|-----------|----------------|
+| 445       | Tucker     | Morrison  | tmorrison@...  |
+| 446       | Robert     | Allen     | rallen@...     |
+| 447       | Jordan     | Winters   | jwinters64@... |
+
+###### `books`
+
+| book_id (PK) | title                  | list_price | author_id (FK) |
+|--------------|------------------------|------------|----------------|
+| 1145         | Designing Databases    | $45        | 447            |
+| 1146         | PostgreSQL Made Simple | $39.95     | 446            |
+| 1147         | Y U Don't Need MongoDB | $19.95     | 447            |
+
+El problema aparece si un mismo libro puede tener varios autores, cómo representamos esa relación? No podemos asociar un libro con múltiples _Foreign Keys_ (`authorID` sería una [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1) de la tabla `books`)
+
+
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
