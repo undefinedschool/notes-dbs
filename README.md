@@ -379,6 +379,10 @@ Este es el tipo de relación más común en bases de datos relacionales.
 
 **En las relaciones _muchos a muchos_, muchas _entidades_ pueden tener relaciones con 1 o más entidades y viceversa**. Por ejemplo, muchos estudiantes pueden estar cursando más de 1 asignatura y a la vez cada asignatura puede tener más de 1 estudiante anotado.
 
+> 👉 **En la mayoría de las bases de datos relacionales no podemos expresar relaciones _many to many_ directamente**, sino que tendremos que hacerlo indirectamente.
+
+Por ejemplo,
+
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ### Índices
