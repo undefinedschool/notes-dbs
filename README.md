@@ -201,9 +201,6 @@ CREATE TABLE users (
 );
 ```
 
-[![Primary Key](https://img.youtube.com/vi/E3Bs3H14C8Y/0.jpg)](https://www.youtube.com/watch?v=E3Bs3H14C8Y)
-> Ver [Primary Key](https://www.youtube.com/watch?v=E3Bs3H14C8Y)
-
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ##### `FOREIGN KEY`
@@ -278,6 +275,9 @@ Es un valor de una columna (o conjunto de columnas) que identifica **unívocamen
 
 > 👉 **Toda tabla de una base de datos relacional debería tener definida una Primary Key**.
 
+[![Primary Key](https://img.youtube.com/vi/E3Bs3H14C8Y/0.jpg)](https://www.youtube.com/watch?v=E3Bs3H14C8Y)
+> Ver [Primary Key](https://www.youtube.com/watch?v=E3Bs3H14C8Y)
+
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 #### Natural keys
@@ -305,6 +305,9 @@ Es un valor o campo (o grupo de campos) que identifica **unívocamente** un regi
 El tipo de dato es indistinto, lo importante es que la columna que elijamos como _Primary Key_ no contenga valores repetidos.
 
 > 👉 **Una tabla puede contener múltiples Foreign Keys**, dependiendo de sus relaciones con otras tablas.
+
+[![Foreign Key](https://img.youtube.com/vi/5HQzigiRb5c/0.jpg)](https://www.youtube.com/watch?v=5HQzigiRb5c)
+> Ver [Foreign Key](https://www.youtube.com/watch?v=5HQzigiRb5c)
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
