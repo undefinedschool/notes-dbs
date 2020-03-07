@@ -201,6 +201,9 @@ CREATE TABLE users (
 );
 ```
 
+[![Primary Key](https://img.youtube.com/vi/E3Bs3H14C8Y/0.jpg)](https://www.youtube.com/watch?v=E3Bs3H14C8Y)
+> Ver [Primary Key](https://www.youtube.com/watch?v=E3Bs3H14C8Y)
+
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ##### `FOREIGN KEY`
