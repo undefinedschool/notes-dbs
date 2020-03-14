@@ -323,7 +323,7 @@ Cuando buscamos datos en una tabla (`SELECT, WHERE`), la base de datos tiene que
 
 Para solucionar este problema existen los **índices**, que permiten que nuestras _queries_ sean rápidas y eficientes, mejorando en consecuencia la _performance_.
 
-Podemos _indexar_ tablas por 1 o más columnas. **Una DB puede tener más de un índice**.
+Podemos _indexar_ tablas por 1 o más columnas. **Una tabla puede tener más de un índice**.
 
 > ⚠️ **Agregar índices a una DB requiere espacio extra de almacenamiento (espacio en disco), aparte del espacio necesario para almacenar los datos**. Además, cada vez que agreguemos un nuevo registro a una tabla, se actualizarán los índices correspondientes, haciendo esta operación más costosa. Por lo tanto, hay que utilizarlos con la precaución y planificación necesaria.
 
