@@ -333,6 +333,11 @@ Podemos _indexar_ tablas por 1 o más columnas. **Una tabla puede tener más de 
 
 (WIP)
 
+- más operaciones de lectura que de escritura
+- espacio en disco suficiente
+- alta cardinalidad de un atributo (como PKs)
+- frecuencia de búsqueda/filtrado/ordenamiento
+
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ### Transacciones
