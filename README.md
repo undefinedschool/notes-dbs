@@ -42,6 +42,7 @@
     - [Synthetic keys](https://github.com/undefinedschool/notes-dbs#synthetic-keys)
   - [Foreign Key](https://github.com/undefinedschool/notes-dbs#foreign-key-1)
   - [Relaciones](https://github.com/undefinedschool/notes-dbs#relaciones)
+  - [Join](https://github.com/undefinedschool/notes-dbs#join)
   - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
     - [Cuándo usar índices](https://github.com/undefinedschool/notes-dbs#cu%C3%A1ndo-usar-%C3%ADndices)
   - [Transacciones](https://github.com/undefinedschool/notes-dbs#transacciones)
@@ -314,6 +315,17 @@ El tipo de dato es indistinto, lo importante es que la columna que elijamos como
 ### Relaciones
 
 > 👉 **Ver [_Bases de Datos - Relaciones_](https://github.com/undefinedschool/notes-dbs-relationships/)**.
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
+### Join
+
+Cuando necesitamos combinar datos de una (_self join_) o más tablas, utilizamos `JOIN`, basándonos en las columnas en común entre las tablas. Las columnas en común suelen ser la [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key-1) de la primer tabla y la [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1) de la segunda tabla.
+
+[![SQL Joins Explained](https://img.youtube.com/vi/9yeOJ0ZMUYw/0.jpg)](https://www.youtube.com/watch?v=9yeOJ0ZMUYw)
+> Ver [SQL Joins Explained](https://www.youtube.com/watch?v=9yeOJ0ZMUYw)
+
+> 👉 Para ver la sintaxis y cómo escribir los diferentes tipos de joins, **ver [_Bases de Datos - SQL (Joins)_](https://github.com/undefinedschool/notes-sql/#join)**.
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
