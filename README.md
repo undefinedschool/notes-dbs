@@ -341,9 +341,21 @@ Cuando necesitamos combinar datos de una (_self join_) o más tablas, utilizamos
 
 > 👉 Ver [**PostgreSQL INNER JOIN**](https://www.postgresqltutorial.com/postgresql-inner-join/)
 
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 #### `LEFT JOIN`
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 #### `RIGHT JOIN`
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 #### `FULL (OUTER) JOIN`
+
+> 👉 No confundir con [`UNION`](https://www.quora.com/What-is-the-difference-between-full-outer-join-and-union-in-SQL)
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 ### Índices
 
@@ -359,12 +371,10 @@ Podemos _indexar_ tablas por 1 o más columnas. **Una tabla puede tener más de 
 
 #### Cuándo usar índices
 
-(WIP)
-
-- más operaciones de lectura que de escritura
+- cuando tenemos más operaciones de lectura que de escritura
 - espacio en disco suficiente
 - alta cardinalidad de un atributo (como PKs)
-- frecuencia de búsqueda/filtrado/ordenamiento
+- alta frecuencia de búsqueda/filtrado/ordenamiento
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
