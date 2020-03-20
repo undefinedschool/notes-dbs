@@ -370,6 +370,18 @@ Cuando necesitamos combinar datos de una (_self join_) o más tablas, utilizamos
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
+#### `SELF JOIN`
+
+> 👉 Ver [**PostgreSQL SELF JOIN**](https://www.postgresqltutorial.com/postgresql-self-join/)
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
+#### `CROSS JOIN`
+
+> 👉 Ver [**PostgreSQL CROSS JOIN**](https://www.postgresqltutorial.com/postgresql-cross-join/)
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
 ### Índices
 
 Cuando buscamos datos en una tabla (`SELECT, WHERE`), la base de datos tiene que mirar registro por registro para encontrar aquellos que coincidan con los criterios especificados. Si tenemos un gran volumen de datos, esta operación puede ser _muy lenta_.
