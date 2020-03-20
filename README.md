@@ -353,7 +353,7 @@ Cuando necesitamos combinar datos de una (_self join_) o más tablas, utilizamos
 
 #### `FULL (OUTER) JOIN`
 
-> 👉 No confundir con [`UNION`](https://www.quora.com/What-is-the-difference-between-full-outer-join-and-union-in-SQL/answer/Ashutosh-Tripathy-10)
+> 👉 No confundir con [`UNION`](https://www.quora.com/What-is-the-difference-between-full-outer-join-and-union-in-SQL/answer/Ashutosh-Tripathy-10) <sup id="cite_ref-1"><a href="#cite_note-1">[1]</a></sup>.
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
@@ -449,3 +449,7 @@ brew services restart postgresql
 👉 Para más detalles, ver [PostgreSQL (Postgres) - Installation & Overview](https://www.youtube.com/watch?v=fZQI7nBu32M).
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
+---
+
+<sup id="cite_note-1"><a href="#cite_ref-1">1</a></sup> Ver [Cuándo usar `UNION`](https://www.quora.com/When-would-you-use-UNION-in-SQL).
