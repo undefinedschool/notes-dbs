@@ -353,7 +353,7 @@ Cuando necesitamos combinar datos de una (_self join_) o más tablas, utilizamos
 
 #### `FULL (OUTER) JOIN`
 
-> 👉 No confundir con [`UNION`](https://www.quora.com/What-is-the-difference-between-full-outer-join-and-union-in-SQL)
+> 👉 No confundir con [`UNION`](https://www.quora.com/What-is-the-difference-between-full-outer-join-and-union-in-SQL/answer/Ashutosh-Tripathy-10)
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
