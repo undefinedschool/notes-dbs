@@ -336,6 +336,8 @@ Cuando necesitamos combinar datos de una (_self join_) o más tablas, utilizamos
 
 > 👉 Para ver la sintaxis y cómo escribir los diferentes tipos de joins, **ver [_Bases de Datos - SQL (Joins)_](https://github.com/undefinedschool/notes-sql/#join)**.
 
+> 👉 Para un resumen de los diferentes tipos de Joins, **ver [_PostgreSQL Joins_](https://www.postgresqltutorial.com/postgresql-joins/)**.
+
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 #### `INNER JOIN`
