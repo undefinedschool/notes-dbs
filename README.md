@@ -337,7 +337,7 @@ Cuando necesitamos combinar datos de una (_self join_) o más tablas, utilizamos
 
 #### `INNER JOIN`
 
-![Inner Join](https://sp.postgresqltutorial.com/wp-content/uploads/2018/12/PostgreSQL-Join-Inner-Join.png)
+![Inner Join](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/SQL_Join_-_07_A_Inner_Join_B.svg/440px-SQL_Join_-_07_A_Inner_Join_B.svg.png)
 
 > 👉 Ver [**PostgreSQL INNER JOIN**](https://www.postgresqltutorial.com/postgresql-inner-join/)
 
@@ -345,15 +345,25 @@ Cuando necesitamos combinar datos de una (_self join_) o más tablas, utilizamos
 
 #### `LEFT JOIN`
 
+![Left Join](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/SQL_Join_-_01_A_Left_Join_B.svg/440px-SQL_Join_-_01_A_Left_Join_B.svg.png)
+
+> 👉 Ver [**PostgreSQL LEFT JOIN**](https://www.postgresqltutorial.com/postgresql-left-join/)
+
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 #### `RIGHT JOIN`
+
+![Right Join](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/SQL_Join_-_03_A_Right_Join_B.svg/468px-SQL_Join_-_03_A_Right_Join_B.svg.png)
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 #### `FULL (OUTER) JOIN`
 
-> 👉 No confundir con [`UNION`](https://www.quora.com/What-is-the-difference-between-full-outer-join-and-union-in-SQL/answer/Ashutosh-Tripathy-10) <sup id="cite_ref-1"><a href="#cite_note-1">[1]</a></sup>.
+![Full Join](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/SQL_Join_-_05b_A_Full_Join_B.svg/440px-SQL_Join_-_05b_A_Full_Join_B.svg.png)
+
+> 👉 Ver [**PostgreSQL FULL (OUTER) JOIN**](https://www.postgresqltutorial.com/postgresql-full-outer-join/)
+
+> **Nota:** no confundir con [`UNION`](https://www.quora.com/What-is-the-difference-between-full-outer-join-and-union-in-SQL/answer/Ashutosh-Tripathy-10) <sup id="cite_ref-1"><a href="#cite_note-1">[1]</a></sup>.
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
