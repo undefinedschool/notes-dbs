@@ -329,11 +329,18 @@ Cuando necesitamos combinar datos de una (_self join_) o más tablas, utilizamos
 [![SQL Joins Explained](https://img.youtube.com/vi/9yeOJ0ZMUYw/0.jpg)](https://www.youtube.com/watch?v=9yeOJ0ZMUYw)
 > Ver [SQL Joins Explained](https://www.youtube.com/watch?v=9yeOJ0ZMUYw)
 
+![Joins](https://i.imgur.com/TXBDSyI.png)
+
 > 👉 Para ver la sintaxis y cómo escribir los diferentes tipos de joins, **ver [_Bases de Datos - SQL (Joins)_](https://github.com/undefinedschool/notes-sql/#join)**.
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
 #### `INNER JOIN`
+
+![Inner Join](https://sp.postgresqltutorial.com/wp-content/uploads/2018/12/PostgreSQL-Join-Inner-Join.png)
+
+> 👉 Ver [**PostgreSQL INNER JOIN**](https://www.postgresqltutorial.com/postgresql-inner-join/)
+
 #### `LEFT JOIN`
 #### `RIGHT JOIN`
 #### `FULL (OUTER) JOIN`
