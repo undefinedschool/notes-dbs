@@ -56,6 +56,7 @@
     - [ACID](https://github.com/undefinedschool/notes-dbs#acid)
   - [Normalización](https://github.com/undefinedschool/notes-dbs#normalizaci%C3%B3n)
 - [Bases de Datos Relacionales (SQL) vs No Relacionales (NoSQL)](https://github.com/undefinedschool/notes-dbs#bases-de-datos-relacionales-sql-vs-no-relacionales-nosql)
+- [ORMs](https://github.com/undefinedschool/notes-dbs#orms)
 - [SQL](https://github.com/undefinedschool/notes-dbs#sql)
 - [PostgreSQL](https://github.com/undefinedschool/notes-dbs#postgresql)
   - [Instalación](https://github.com/undefinedschool/notes-dbs#instalaci%C3%B3n)
@@ -435,6 +436,31 @@ Es un acrónimo que define qué características debe cumplir una transacción, 
 (WIP)
 
 Para un resumen de las diferencias, ver [_SQL vs NoSQL or MySQL vs MongoDB_](https://www.youtube.com/watch?v=ZS_kXvOeQ5Y)
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+
+## ORMs
+
+Los ORMs (Object Relational Mapping) nos permiten _mapear_ entidades de bases de datos (relacionales) a objetos nativos del lenguaje que estemos utilizando en el backend (por ejemplo JS con Node).
+
+Introducen una capa intermedia entre la db y el código del backend (_data layer_), que se encarga de realizar esta conversión por nosotros y nos permite interactuar con la DB a través de los objetos y métodos que nos provee.
+
+### Pros
+
+- Siempre trabajamos con objetos nativos del lenguaje
+- Reduce la cantidad de código que tenemos que escribir (principalmente las queries)
+- Ahorra trabajo repetitivo
+- Facilita el testing
+
+### Cons
+
+- Es una capa más de abstracción
+- Agrega más conceptos para aprender
+- Tenemos menos control
+- Algunas queries se complejizan bastante
+- Dificulta entender la lógica detrás de las operaciones que estamos realizando
+- Dificulta el mantenimiento (por ejemplo compatibilidad con diferentes DMBS) y debugging
+- Impacto en la performance de las operaciones vs _raw SQL_
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
