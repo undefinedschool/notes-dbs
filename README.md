@@ -53,7 +53,7 @@
   - [Índices](https://github.com/undefinedschool/notes-dbs#%C3%ADndices)
     - [Cuándo usar índices](https://github.com/undefinedschool/notes-dbs#cu%C3%A1ndo-usar-%C3%ADndices)
   - [Transacciones](https://github.com/undefinedschool/notes-dbs#transacciones)
-  - [ACID](https://github.com/undefinedschool/notes-dbs#acid)
+    - [ACID](https://github.com/undefinedschool/notes-dbs#acid)
   - [Normalización](https://github.com/undefinedschool/notes-dbs#normalizaci%C3%B3n)
 - [Bases de Datos Relacionales (SQL) vs No Relacionales (NoSQL)](https://github.com/undefinedschool/notes-dbs#bases-de-datos-relacionales-sql-vs-no-relacionales-nosql)
 - [SQL](https://github.com/undefinedschool/notes-dbs#sql)
@@ -407,13 +407,20 @@ Podemos _indexar_ tablas por 1 o más columnas. **Una tabla puede tener más de 
 
 ### Transacciones
 
-(WIP)
+Una _transacción_ es una **unidad combinada de trabajo**, una **serie de pasos que debemos ejecutar en cierto orden y que se considera exitosa sólo si todos los pasos se ejecutan correctamente**. Si algún paso falla, la transacción entera se cancela y se revierten todos los pasos individuales, volviendo al estado original, previo a la operación.
+
+> 👉 Ver [**PostgreSQL Transaction**](https://www.postgresqltutorial.com/postgresql-transaction/)
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
-### ACID
+#### ACID
 
-(WIP)
+Es un acrónimo que define qué características debe cumplir una transacción, para garantizar la integridad, consistencia y seguridad de los datos durante una operación.
+
+- **A**: Atómica (atomic). Se refiere a que es una unidad de trabajo _indivisible_ (aunque hoy en día sabemos que los átomos pueden dividirse pero quedó el nombre), la transacción se realiza completa o se revierte.
+- **C**: Consistente (consistent). Significa que cualquier transacción debe llevar a la db de un estado válido a otro estado válido (los estados intermedios no son visibles), según las reglas definidas por el DBMS.
+- **I**: Aislada (isolated). Durante una transacción, los datos involucrados se encuentran aislados, no pudiendo ser accedidos y/o modificados por otra operación.
+- **D**: Persistente (durable). Si la transacción se realiza de forma exitosa, debe estar garantizada su persistencia en la db (por ejemplo, si inmediatamente ocurre algún error después).
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
 
