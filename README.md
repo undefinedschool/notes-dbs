@@ -398,7 +398,7 @@ Podemos _indexar_ tablas por 1 o más columnas. **Una tabla puede tener más de 
 
 ### Transacciones
 
-Una _transacción_ es una **unidad combinada de trabajo**, una **serie de pasos que debemos ejecutar en cierto orden y que se considera exitosa sólo si todos los pasos se ejecutan correctamente**. Si algún paso falla, la transacción entera se cancela y se revierten todos los pasos individuales, volviendo al estado original, previo a la operación.
+Una _transacción_ es una **unidad combinada de trabajo**, una **serie de pasos que debemos ejecutar en cierto orden y que se considera exitosa si y sólo si todos los pasos se ejecutan correctamente**. Si algún paso falla, la transacción entera se cancela y se revierten todos los pasos individuales, volviendo al estado original, previo a la operación.
 
 > 👉 Ver [**PostgreSQL Transaction**](https://www.postgresqltutorial.com/postgresql-transaction/) y más detalles en la [documentación de Postgres](https://www.postgresql.org/docs/current/tutorial-transactions.html)
 
